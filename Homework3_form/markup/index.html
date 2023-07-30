@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../markup/media/logoDN.png">
+    <title>Пошук</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="logo_bar">
+            <a href="../markup/pages/log.html">
+                <img style="width: 30px; height: 30px;" src="../markup/media/home.png" alt="Вхід">
+                <span>Вхід в кабінет</span>
+            </a>
+        </div><br>
+        <a href="../markup/index.html">
+            <img id="search" style="width: 30px; height: 30px;" src="../markup/media/search.png" alt="Пошук">
+            <span><b>Пошук</b></span>
+        </a>
+    </header>
     <main>
         <form action="https://fom.in.ua/echo">
         <fieldset style="width: 700px;">
@@ -178,7 +190,9 @@
             <input type="checkbox" id="comf11">
             <label for="comf11">Холодильник</label><br>
         </section>
-        </fieldset>
+        </fieldset> <br>
+        <button style="background-color: green; padding: 10px 15px; width: 200px;" type="submit"><b>Застосувати фільтри</b></button>
+        <button style="padding: 10px;" type="reset">Скинути фільтри</button>
         </form>
     </main>
     <footer></footer>

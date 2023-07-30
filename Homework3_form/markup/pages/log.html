@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Вхід</title>
 </head>
 <body>
-    <head>
-
-    </head>
-    <br>
+    <header>
+        <a href="../index.html">
+            <img id="search" style="width: 30px; height: 30px;" src="../media/search.png" alt="Пошук">
+            <span><b>Пошук</b></span>
+        </a>
+    </header>
+    <hr>
     <main>
-        <form action="">
+        <form action="https://fom.in.ua/echo">
             <fieldset style="width: 200px;">
-                <legend><b>Вхід на сайт</b></legend>
+                <legend><h2>Вхід в кабінет</h2></legend>
                 <p>
                     <label for="mail2">E-mail</label>
                     <input id="mail2" type="email"><br> 
@@ -24,10 +27,14 @@
                 </p>
                 <p>
                     <input id="save" type="checkbox">
-                    <label for="save">Запам'ятати мене</label>
+                    <label for="save">Запам'ятати мене</label><br>
+                    <a href="">Забули пароль?</a>
                 </p>
-                <button style="background-color: green; padding: 10px 15px; width: 100px;" type="submit">Увійти</button>
-                <p><a href="">Забули пароль?</a></p>
+                <button style="background-color: green; padding: 10px 15px; width: 200px;" type="submit"><b>Увійти</b></button>
+                <br>
+                <p>або</p>
+                <div style="width: 200px; text-align: center;"><a href="../pages/signin.html" style="padding: 10px 15px;">Зареєсруватися</a>
+                </div>
             </fieldset>
         </form>
     </main>
