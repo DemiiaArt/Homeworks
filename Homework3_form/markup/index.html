@@ -8,10 +8,11 @@
 <body>
     <header></header>
     <main>
-        <form action="">
-        <h2>Розширений пошук авто</h2>
-        <p>
-            <label for="type_vehicle">Тип транспорту</label>
+        <form action="https://fom.in.ua/echo">
+        <fieldset style="width: 700px;">
+        <legend><h2>Розширений пошук авто</h2></legend>
+        <div>
+            <label for="type_vehicle"><b>Тип транспорта</b></label>
             <select id="type_vehicle">
                 <option value="Всі типи транспорта">Всі типи транспорта</option>
                 <option value="Легкові">Легкові</option>
@@ -20,9 +21,9 @@
                 <option value="Причепи">Причепи</option>
                 <option value="Спецтехніка">Спецтехніка</option>
             </select>
-        </p>
-        <p>
-            <h3>Тип кузова</h3>
+        </div><br>
+        <div>
+            <span><b>Тип кузова</b></span>
             <input id="universal" type="checkbox" name="car_type">
             <label for="universal">універсал</label>
             <input id="sedan" type="checkbox" name="car_type">
@@ -35,9 +36,9 @@
             <label for="kupe">купе</label>
             <input id="kabr" type="checkbox" name="car_type">
             <label for="kabr">кабріолет</label>
-        </p>
-        <p>
-            <label for="car_brand">Марка авто</label>
+        </div><br>
+        <div>
+            <label for="car_brand"><b>Марка авто</b></label>
             <select name="Оберіть марку" id="car_brand">
                 <option value="all_brands">Оберіть марку</option>
                 <option value="bmw">БМВ</option>
@@ -47,9 +48,9 @@
                 <option value="mazda">Мазда</option>
                 <option value="toyota">Тойота</option>
             </select>
-        </p>
-        <p>
-            <label for="prodused">Країна виробник</label>
+        </div><br>
+        <div>
+            <label for="prodused"><b>Країна виробник</b></label>
             <select name="Країна виробник" id="prodused">
                 <option value="all_countries">Оберіть країну</option>
                 <option value="USA">Америка</option>
@@ -60,9 +61,9 @@
                 <option value="Japan">Японія</option>
                 <option value="Czech republic">Чехія</option>
             </select>
-        </p>
-        <p>
-            <h3>Рік випуску</h3>
+        </div><br>
+        <div>
+            <span><b>Рік випуску</b></span>
             <label for="up"></label>
             <select name="year_up" id="up">
                 <option value="up_all_years">Рік, від</option>
@@ -101,11 +102,11 @@
                 <option value="2010">2010</option>
                 <option value="<2010">до 2010 </option>
             </select>
-        </p>
-        <p>
-            <h3>Вартість авто</h3>
-            <input type="number" id="price_up" placeholder="Від">
-            <input type="number" id="price_to" placeholder="до">
+        </div><br>
+        <div>
+            <span><b>Вартість авто</b></span><br>
+            <input type="number" id="price_up" placeholder="Від" style="width: 100px;">
+            <input type="number" id="price_to" placeholder="до" style="width: 100px;">
             <select name="money" id="money">
                 <option value="dollar">$</option>
                 <option value="euro">€</option>
@@ -117,9 +118,9 @@
             <label for="price2">Можливий торг</label><br>
             <input id="change" type="checkbox">
             <label for="change">Можливий обмін</label>
-        </p>
-        <p>
-            <h3>Стан авто</h3>
+        </div><br>
+        <div>
+            <span><b>Стан авто</b></span><br>
             <input id="crashed" type="checkbox" name="auto_details">
             <label for="crashed">Авто після ДТП</label><br>
             <input id="credit" type="checkbox" name="auto_details">
@@ -127,11 +128,11 @@
             <input id="import" type="checkbox" name="auto_details">
             <label for="import">Під замовлення</label><br>
             <input id="first_reg" type="checkbox" name="auto_details">
-            <label for="first_reg">Перша реєстрація</label><br>
-        </p>
-        <p>
+            <label for="first_reg">Перша реєстрація</label>
+        </div><br>
+        <section>
             <h3>Технічні характеристики</h3>
-            <label for="fuel">Вид палива</label>
+            <label for="fuel"><b>Вид палива</b></label>
             <select name="fuel" id="fuel">
                 <option value="fuel1">Бензин</option>
                 <option value="fuel2">Газ</option>
@@ -139,20 +140,20 @@
                 <option value="fuel4">Газ/Бензин</option>
                 <option value="fuel5">Електро</option>
             </select> <br>
-            <label for="kpp">КПП</label>
-            <select name="kpp" id="fuel">
+            <label for="kpp"><b>КПП</b></label>
+            <select name="kpp" id="kpp">
                 <option value="kpp1">Механіка</option>
                 <option value="kpp2">Автомат</option>
                 <option value="kpp3">Типтронік</option>
                 <option value="kpp4">Робот</option>
                 <option value="kpp5">Варіатор</option>
             </select><br>
-            <label for="color">Колір</label>
-            <input id="color" type="color" name="color"><br>
+            <label for="color"><b>Колір</b></label>
+            <input id="color" type="color" name="color">
             <input id="metallic" type="checkbox" name="color">
             <label for="metallic">Металік</label>
-        </p>
-        <p>
+        </section>
+        <section>
             <h3>Додаткові опції</h3>
             <input type="checkbox" id="comf1">
             <label for="comf1">Адаптивний круіз</label><br>
@@ -176,8 +177,8 @@
             <label for="comf10">Дистанційний запуск двигуна</label><br>
             <input type="checkbox" id="comf11">
             <label for="comf11">Холодильник</label><br>
-        </p>
-
+        </section>
+        </fieldset>
         </form>
     </main>
     <footer></footer>
