@@ -21,9 +21,106 @@
             </select>
         </p>
         <p>
-            <label for=""></label>
-            <input id="" type="text">
+            <h3>Тип кузова</h3>
+            <input id="universal" type="checkbox" name="car_type">
+            <label for="universal">універсал</label>
+            <input id="sedan" type="checkbox" name="car_type">
+            <label for="sedan">седан</label>
+            <input id="hetch" type="checkbox" name="car_type">
+            <label for="hetch">хетчбек</label>
+            <input id="cross" type="checkbox" name="car_type">
+            <label for="cross">кросовер</label>
+            <input id="kupe" type="checkbox" name="car_type">
+            <label for="kupe">купе</label>
+            <input id="kabr" type="checkbox" name="car_type">
+            <label for="kabr">кабріолет</label>
         </p>
+        <p>
+            <label for="car_brand">Марка авто</label>
+            <select name="Оберіть марку" id="car_brand">
+                <option value="all_brands">Оберіть марку</option>
+                <option value="bmw">БМВ</option>
+                <option value="vw">Фольксваген</option>
+                <option value="audi">Ауді</option>
+                <option value="merscedes">Мерседес</option>
+                <option value="mazda">Мазда</option>
+                <option value="toyota">Тойота</option>
+            </select>
+        </p>
+        <p>
+            <label for="prodused">Країна виробник</label>
+            <select name="Країна виробник" id="prodused">
+                <option value="all_countries">Оберіть країну</option>
+                <option value="USA">Америка</option>
+                <option value="China">Китай</option>
+                <option value="Germany">Німеччина</option>
+                <option value="Itali">Італія</option>
+                <option value="France">Франція</option>
+                <option value="Japan">Японія</option>
+                <option value="Czech republic">Чехія</option>
+            </select>
+        </p>
+        <p>
+            <h3>Рік випуску</h3>
+            <label for="up"></label>
+            <select name="year_up" id="up">
+                <option value="up_all_years">Рік, від</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="<2010">до 2010 </option>
+            </select>
+            <label for="to"></label>
+            <select name="year_to" id="to">
+                <option value="to_all_years">Рік, до</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="<2010">до 2010 </option>
+            </select>
+        </p>
+        <p>
+            <h3>Вартість авто</h3>
+            <input type="number" id="price_up" placeholder="Від">
+            <input type="number" id="price_to" placeholder="до">
+            <select name="money" id="money">
+                <option value="dollar">$</option>
+                <option value="euro">€</option>
+                <option value="uah">грн.</option>
+            </select><br>
+            <input id="NDS" type="checkbox">
+            <label for="NDS">Ціна з НДС</label><br>
+            <input id="price2" type="checkbox">
+            <label for="price2">Можливий торг</label><br>
+            <input id="change" type="checkbox">
+            <label for="change">Можливий обмін</label>
+        </p>
+        <p>
+            le
+        </p>
+
     </main>
     <footer></footer>
 </body>
