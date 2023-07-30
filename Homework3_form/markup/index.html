@@ -8,6 +8,7 @@
 <body>
     <header></header>
     <main>
+        <form action="">
         <h2>Розширений пошук авто</h2>
         <p>
             <label for="type_vehicle">Тип транспорту</label>
@@ -118,9 +119,42 @@
             <label for="change">Можливий обмін</label>
         </p>
         <p>
-            le
+            <h3>Стан авто</h3>
+            <input id="crashed" type="checkbox" name="auto_details">
+            <label for="crashed">Авто після ДТП</label><br>
+            <input id="credit" type="checkbox" name="auto_details">
+            <label for="credit">Авто в кредиті</label><br>
+            <input id="import" type="checkbox" name="auto_details">
+            <label for="import">Під замовлення</label><br>
+            <input id="first_reg" type="checkbox" name="auto_details">
+            <label for="first_reg">Перша реєстрація</label><br>
+        </p>
+        <p>
+            <h3>Технічні характеристики</h3>
+            <label for="fuel">Вид палива</label>
+            <select name="fuel" id="fuel">
+                <option value="fuel1">Бензин</option>
+                <option value="fuel2">Газ</option>
+                <option value="fuel3">Дизель</option>
+                <option value="fuel4">Газ/Бензин</option>
+                <option value="fuel5">Електро</option>
+            </select> <br>
+            <label for="kpp">КПП</label>
+            <select name="kpp" id="fuel">
+                <option value="kpp1">Механіка</option>
+                <option value="kpp2">Автомат</option>
+                <option value="kpp3">Типтронік</option>
+                <option value="kpp4">Робот</option>
+                <option value="kpp5">Варіатор</option>
+            </select><br>
+            <label for="color">Колір</label>
+            <input id="color" type="color" name="color"><br>
+            <input id="metallic" type="checkbox" name="color">
+            <label for="metallic">Металік</label>
+
         </p>
 
+        </form>
     </main>
     <footer></footer>
 </body>
