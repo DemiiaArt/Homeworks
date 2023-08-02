@@ -6,63 +6,106 @@
     <title>Conspect</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>CSS - Cascadind Style Sheets</h1>
     <article>
-        <p></p>
+        <p>3 способи підключення стилів:</p>
         <ol>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>інлайново в описі к тегу</li>
+            <li>прописати в документі html в head</li>
+            <li>підключити через link сторінку css зі стилями</li>
         </ol>
     </article>
     <dl>
-        <dt></dt>
-        <dd></dd>
-        <dt></dt>
-        <dd></dd>
-        <dt></dt>
-        <dd></dd>
-        <dt></dt>
-        <dd></dd>
-        <dt></dt>
-        <dd></dd>
-        <dt></dt>
-        <dd></dd>
-        <dt></dt>
-        <dd></dd>
-        <dt></dt>
-        <dd></dd>
-        <dt></dt>
-        <dd></dd>
-        <dt></dt>
-        <dd></dd>
+        <dt>* {...:...;}</dt>
+        <dd>
+            <span>Універсальний</span>
+            <span>(приміняється до всіх елемнтів)</span>
+        </dd>
+        <dt>ТЕГ {...:...;}</dt>
+        <dd>
+            <span>Теговий</span>
+            <span>(приміняється до конкретного тегу)</span>
+        </dd>
+        <dt>.клас {...:...;}</dt>
+        <dd>
+            <span>Класовий</span>
+            <span>(приміняється до конкретного класу)</span>
+        </dd>
+        <dt>#ІД {...:...;}</dt>
+        <dd>
+            <span>Селектор ідентифікатора</span>
+            <span>(приміняється до унікального id)</span>
+        </dd>
+        <dt>ТЕГ, ТЕГ {...:...;}</dt>
+        <dd>
+            <span>Селектор груп</span>
+            <span>(приміняється до вказаних елемнтів)</span>
+        </dd>
+        <dt>а b {...:...;}</dt>
+        <dd>
+            <span>Селектор потомка</span>
+            <span>(приміняється до потомка <span>(стоїть другим)</span> вказаного елементу <span>(стоїть на першому місці)</span>)</span>
+        </dd>
+        <dt>а>b {...:...;}</dt>
+        <dd>
+            <span>Дочерній селектор</span>
+            <span>(приміняється до елементу, яки є прямим потомком першого елементу та стоїть одразу за ним)</span>
+        </dd>
+        <dt>a+b {...:...;}</dt>
+        <dd>
+            <span>Сусідні селектори</span>
+            <span>(приміняється до двох сусідніх елементів. Використовується для більшої компактності написання коду)</span>
+        </dd>
+        <dt>a~b {...:...;}</dt>
+        <dd>
+            <span>Родственний селектор</span>
+            <span>(приміняється до всіх елементів, які знаходяться після першого елемнту та мають спільний батьківський елемент)</span>
+        </dd>
+        <dt>a[атрибут="значення"] {...:...;}</dt>
+        <dd>
+            <span>Селектор атрибута</span>
+            <span>(приміняється до вказаних атрибутів)</span>
+        </dd>
     </dl>
-    <p></p>
+    <p><span>!important;</span>при записі інлайново перебиває всі інші стилі</p>
     <div>
-        <h3></h3>
+        <h3>Наслідування свойств</h3>
         <article>
-            <span></span>
-            <span></span>
-            <p></p>
+            <span>Наслідуються</span>
+            <span>відносяться к текстовому змісту</span>
+            <p>color, font, line-high, word-spacing, white-space, text-align, text-transform, visibility, list-style</p>
         </article>
         <article>
-            <span></span>
-            <span></span>
-            <p></p>
+            <span>Ненаслідуються</span>
+            <span>відносяться к форматуванню блоку</span>
+            <p>background, border, display, clear, margin, padding, outline, min/max heigh, position, z-index</p>
         </article>
     </div>
-    <p></p>
+    <p>Каскадність</p>
     <div>
-        <span></span>
+        <span>ТЕГ</span>
     </div>
     <div>
-        <span></span>
+        <span>.клас</span>
     </div>
     <div>
-        <span></span>
+        <span>#ІД</span>
     </div>
     <div>
-        <span></span>
+        <span>Інлайн style=""</span>
+    </div>
+    <br>
+    <div>
+        <span>1</span>
+    </div>
+    <div>
+        <span>10</span>
+    </div>
+    <div>
+        <span>100</span>
+    </div>
+    <div>
+        <span>1000</span>
     </div>
 </body>
 </html>
