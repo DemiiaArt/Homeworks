@@ -24,7 +24,19 @@ li+li {
 }
 
 .expl, .expl2 {
-    color: rgb(218, 15, 15);
+    color: rgb(255, 108, 108);
+}
+
+dd .expl3 {
+    color: rgb(255, 59, 59);
+}
+
+dd>.expl4 {
+    color: rgb(255, 7, 7);
+}
+
+.expl5 {
+    color: rgb(187, 0, 0);
 }
 
 article p {
@@ -63,10 +75,6 @@ div>span {
     margin: 50px 0 50px 0;
     border: 1px;
     border-color: gray;
-}
-
-b {
-    color: rgb(83, 8, 8);
 }
 
 i {
