@@ -54,7 +54,7 @@ ul {
     list-style-type: square;
 }
 
-article>span {
+div>span {
     color: rgb(68, 68, 68);
 }
 
