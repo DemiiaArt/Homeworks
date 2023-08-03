@@ -1,0 +1,121 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(37, 37, 37);
+}
+
+.main {
+    color: rgb(16, 71, 110);
+    font-weight: bold;
+}
+
+li+li {
+    color: orangered;
+}
+
+#explanation {
+    border: 2px;
+    border-radius: 3px;
+    outline-style: solid;
+    width: fit-content;
+    background-color: rgb(249, 250, 225);
+}
+
+.expl, .expl2 {
+    color: rgb(218, 15, 15);
+}
+
+article p {
+    color: blue;
+}
+
+dd~dt {
+    color: rgb(12, 124, 36);
+    margin-top: 10px;
+    border-top-style: groove;
+    border-color: rgb(134, 134, 134);
+}
+
+.notice, .more {
+    background-color: rgb(149, 235, 235);
+    border-left-style: solid;
+    border-color: rgb(5, 70, 70);
+    padding: 20px;
+    width: fit-content;
+    margin: 30px 0 30px 0;
+}
+#imitate, #noimitate {
+    color: rgb(207, 124, 28);
+}
+
+ul {
+    list-style-type: square;
+}
+
+article>span {
+    color: rgb(68, 68, 68);
+}
+
+#imit {
+    margin: 50px 0 50px 0;
+    border: 1px;
+    border-color: gray;
+}
+
+b {
+    color: rgb(83, 8, 8);
+}
+
+a[href^="https"] {
+    color: orangered;
+}
+
+#cascad1, #cascad2 {
+    display: inline-flex;
+}
+
+.small, .med, .big, .xxl {
+    border-style: ridge;
+    border-color: yellow;
+    position: relative;
+}
+
+#cascad1 span {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#cascad2 span {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.small {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+}
+
+.med {
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+}
+
+.big {
+    width: 90px;
+    height: 90px;
+    font-size: 20px;
+}
+
+.xxl {
+    width: 120px;
+    height: 120px;
+    font-size: 24px;
+}

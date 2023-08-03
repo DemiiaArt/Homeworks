@@ -4,108 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conspect</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <h1>CSS - Cascadind Style Sheets</h1>
-    <article>
-        <p>3 способи підключення стилів:</p>
-        <ol>
+    <div>
+        <p class="main">3 способи підключення стилів:</p>
+        <ul>
             <li>інлайново в описі к тегу</li>
             <li>прописати в документі html в head</li>
             <li>підключити через link сторінку css зі стилями</li>
-        </ol>
-    </article>
-    <dl>
+        </ul>
+        <br>
+    </div>
+    <dl id="explanation">
         <dt>* {...:...;}</dt>
         <dd>
-            <span>Універсальний</span>
+            <span class="expl"><b>Універсальний</b></span>
             <span>(приміняється до всіх елемнтів)</span>
         </dd>
         <dt>ТЕГ {...:...;}</dt>
         <dd>
-            <span>Теговий</span>
+            <span class="expl"><b>Теговий</b></span>
             <span>(приміняється до конкретного тегу)</span>
         </dd>
         <dt>.клас {...:...;}</dt>
         <dd>
-            <span>Класовий</span>
+            <span class="expl2"><b>Класовий</b></span>
             <span>(приміняється до конкретного класу)</span>
         </dd>
         <dt>#ІД {...:...;}</dt>
         <dd>
-            <span>Селектор ідентифікатора</span>
+            <span><b>Селектор ідентифікатора</b></span>
             <span>(приміняється до унікального id)</span>
         </dd>
         <dt>ТЕГ, ТЕГ {...:...;}</dt>
         <dd>
-            <span>Селектор груп</span>
+            <span><b>Селектор груп</b></span>
             <span>(приміняється до вказаних елемнтів)</span>
         </dd>
         <dt>а b {...:...;}</dt>
         <dd>
-            <span>Селектор потомка</span>
+            <span><b>Селектор потомка</b></span>
             <span>(приміняється до потомка <span>(стоїть другим)</span> вказаного елементу <span>(стоїть на першому місці)</span>)</span>
         </dd>
         <dt>а>b {...:...;}</dt>
         <dd>
-            <span>Дочерній селектор</span>
+            <span><b>Дочерній селектор</b></span>
             <span>(приміняється до елементу, яки є прямим потомком першого елементу та стоїть одразу за ним)</span>
         </dd>
         <dt>a+b {...:...;}</dt>
         <dd>
-            <span>Сусідні селектори</span>
+            <span><b>Сусідні селектори</b></span>
             <span>(приміняється до двох сусідніх елементів. Використовується для більшої компактності написання коду)</span>
         </dd>
         <dt>a~b {...:...;}</dt>
         <dd>
-            <span>Родственний селектор</span>
+            <span><b>Родственний селектор</b></span>
             <span>(приміняється до всіх елементів, які знаходяться після першого елемнту та мають спільний батьківський елемент)</span>
         </dd>
         <dt>a[атрибут="значення"] {...:...;}</dt>
         <dd>
-            <span>Селектор атрибута</span>
+            <span><b>Селектор атрибута</b></span>
             <span>(приміняється до вказаних атрибутів)</span>
         </dd>
     </dl>
-    <p><span>!important;</span>при записі інлайново перебиває всі інші стилі</p>
-    <div>
+    <div class="notice"><span id="mark">!important -</span>при записі інлайново перебиває всі інші стилі</div>
+    <div id="imit">
         <h3>Наслідування свойств</h3>
         <article>
-            <span>Наслідуються</span>
-            <span>відносяться к текстовому змісту</span>
+            <span id="imitate">Наслідуються</span>
+            <span><i>(відносяться к текстовому змісту)</i></span>
             <p>color, font, line-high, word-spacing, white-space, text-align, text-transform, visibility, list-style</p>
         </article>
         <article>
-            <span>Ненаслідуються</span>
-            <span>відносяться к форматуванню блоку</span>
+            <span id="noimitate">Ненаслідуються</span>
+            <span><i>(відносяться к форматуванню блоку)</i></span>
             <p>background, border, display, clear, margin, padding, outline, min/max heigh, position, z-index</p>
         </article>
     </div>
-    <p>Каскадність</p>
-    <div>
+    <h3>Каскадність</h3>
+    <div id="cascad1">
+    <div class="small">
         <span>ТЕГ</span>
     </div>
-    <div>
+    <div class="med">
         <span>.клас</span>
     </div>
-    <div>
+    <div class="big">
         <span>#ІД</span>
     </div>
-    <div>
+    <div class="xxl">
         <span>Інлайн style=""</span>
     </div>
+    </div>
     <br>
-    <div>
+    <div id="cascad2">
+    <div class="small">
         <span>1</span>
     </div>
-    <div>
+    <div class="med">
         <span>10</span>
     </div>
-    <div>
+    <div class="big">
         <span>100</span>
     </div>
-    <div>
+    <div class="xxl">
         <span>1000</span>
+    </div>
+    </div>
+    <br>
+    <div class="more">
+        <span>Більше інформації -</span>
+        <a href="https://docs.google.com/presentation/d/1j1oaLM0lj3XFs_1oZC6touzkvUCHQZO-OX0U9mhVHNo/edit#slide=id.g1d590101d18_0_238">ТУТ</a>
     </div>
 </body>
 </html>
