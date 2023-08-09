@@ -15,3 +15,58 @@
     font-style: normal;
     font-display: swap;
 }
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(26/16);
+}
+
+header {
+    padding: 80px 0 0 0;
+    background-color: #EEEFF1;
+}
+
+.section {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.container {
+    width: fit-content;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 42px;
+}
+
+.menu li {
+    display: inline-block;
+    text-transform: uppercase;
+    /* padding: 0 21px; */
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.hero-section {
+    background-color: #EEEFF1;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: calc(78/48);
+}
+
