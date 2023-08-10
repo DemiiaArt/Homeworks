@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?fp6rra');
-  src:  url('fonts/icomoon.eot?fp6rra#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?fp6rra') format('truetype'),
-    url('fonts/icomoon.woff?fp6rra') format('woff'),
-    url('fonts/icomoon.svg?fp6rra#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?w314sk');
+  src:  url('../fonts/icomoon.eot?w314sk#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?w314sk') format('truetype'),
+    url('../fonts/icomoon.woff?w314sk') format('woff'),
+    url('../fonts/icomoon.svg?w314sk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,18 +28,18 @@
 .icon-project:before {
   content: "\e900";
 }
+.icon-images:before {
+  content: "\e90e";
+}
 .icon-books:before {
   content: "\e920";
 }
-.icon-profile:before {
-  content: "\e923";
-}
-.icon-files-empty:before {
-  content: "\e925";
-}
-.icon-file-text2:before {
-  content: "\e926";
+.icon-paste:before {
+  content: "\e92d";
 }
 .icon-folder-open:before {
   content: "\e930";
+}
+.icon-stats-dots:before {
+  content: "\e99b";
 }
