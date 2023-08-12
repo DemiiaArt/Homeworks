@@ -7,3 +7,87 @@
     font-display: swap;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #C4C4C4;
+    width: 700px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 52px;
+    color: white;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+h3 {
+    font-size: 36px;
+    color: white;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.container1 {
+    background-color: #E6E6E6;
+    overflow: hidden;
+    margin: 0 0 30px 0;
+}
+
+.rect1, .rect2, .rect3 {
+    background-color: #FC8F8F;
+}
+
+.rect1, .rect2 {
+    padding: 40px 0;
+    display: inline-block;
+}
+
+.rect1 {
+    float: left;
+}
+
+.rect2 {
+    float: right;
+}
+
+.container2 {
+    background-color: #E6E6E6;
+    overflow: hidden;
+    margin: 0 0 30px 0;
+}
+
+.list {
+    margin: 0 -6px 0 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+.list li {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.rect3 {
+    padding: 14px 0;
+}
+
+.container3 {
+    background-color: #E6E6E6;
+    overflow: hidden;
+}
+
+.box1 {
+    margin: 0 10px 0 0;
+}
+
+.box4 {
+    float: right;
+    margin: 0 0 0 10px;
+}
+
+
