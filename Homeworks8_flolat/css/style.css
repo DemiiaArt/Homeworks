@@ -86,8 +86,9 @@ h3 {
 }
 
 .box4 {
-    float: right;
     margin: 0 0 0 10px;
 }
 
-
+.box2 {
+    float: right;
+}
