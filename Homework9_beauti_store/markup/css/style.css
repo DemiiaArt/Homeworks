@@ -33,6 +33,12 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+.nav-container {
+    background-color: #EFEFEF;
+    padding: 2px 0;
+    text-align: center;
+}
+
 .container {
     max-width: 1150px;
     width: 100%;
@@ -40,17 +46,61 @@ body {
     padding: 0 20px;
 }
 
-.nav-container {
-    background-color: #EFEFEF;
-}
-
-.nav-menu ul {
-    margin: 0 auto;
-    list-style: none;
+.nav-menu {
     display: inline-block;
+    list-style: none;
     padding: 0;
 }
 
 .nav-menu li {
+    display: inline-block;
+    margin: 0 14px;
+}
 
+a {
+    text-decoration: none;
+}
+
+.logo-container {
+    padding: 20px 0 10px;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+}
+
+.call-back {
+    float: right;
+    padding: 16px 0 0;
+}
+
+.call-back a {
+    font-size: 16px;
+    margin: 0 38px 0 0;
+}
+
+.btn {
+    padding: 11px 54px;
+    border: 2px solid #F13C6E;
+    background: #FFF;
+    border-radius: 40px;
+}
+
+.menu {
+    padding: 32px 0;
+    text-align: center;
+}
+
+.menu-list {
+    font-size: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.menu-list li {
+    display: inline-block;
+    margin: 0 18px;
 }
