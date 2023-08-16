@@ -32,3 +32,25 @@ body {
     color: #000;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
+
+.container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-container {
+    background-color: #EFEFEF;
+}
+
+.nav-menu ul {
+    margin: 0 auto;
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+}
+
+.nav-menu li {
+
+}
