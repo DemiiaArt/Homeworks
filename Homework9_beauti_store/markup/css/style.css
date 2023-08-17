@@ -94,7 +94,7 @@ a {
 }
 
 .btn {
-    padding: 11px 54px;
+    padding: 10px 54px;
     border: 2px solid #F13C6E;
     background: #FFF;
     border-radius: 40px;
@@ -277,7 +277,10 @@ h5 {
     padding: 10px 20px;
     border-radius: 30px;
     background: #FFF;
-    /* color: #C4C4C4; */
+}
+
+.box-text input::placeholder {
+    color: #C4C4C4;
 }
 
 .box-text a {
@@ -347,19 +350,33 @@ h5 {
     border-top: 1px solid #EFEFEF;
 }
 
+.socials {
+    padding: 16px 0 0;
+    float: left;
+}
+
 .socials a{
     color: #F13C6E;
-    font-size: 50px;
+    font-size: 44px;
+    line-height: 43px;
     float: left;
-    padding-top: 14px;
-    margin-right: 14px;
+    margin-right: 20px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #F13C6E;
+    border-radius: 50%;
+}
+
+.socials a:hover {
+    color: #FFF;
+    background-color: #F13C6E;
 }
 
 .footer-copy {
     color: #828282;
     font-size: 12px;
     overflow: hidden;
-    padding: 19px 0 10px;
+    padding: 28px 0 10px;
 }
 
 .copyright {
@@ -368,8 +385,13 @@ h5 {
 
 .privacy {
     float: right;
+    padding: 12px 0 0;
 }
 
 .privacy a {
     color: #828282;
+}
+
+.privacy a:hover {
+    color: #F13C6E;
 }
