@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('../font/Roboto-Bold.woff2') format('woff2'),
-        url('../font/Roboto-Bold.woff') format('woff');
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../font/Roboto-Regular.woff2') format('woff2'),
-        url('../font/Roboto-Regular.woff') format('woff');
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../font/Roboto-Medium.woff2') format('woff2'),
-        url('../font/Roboto-Medium.woff') format('woff');
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -62,7 +62,7 @@ a {
 }
 
 .logo-container {
-    padding: 23px 0 10px;
+    padding: 23px 0 15px;
     overflow: hidden;
 }
 
@@ -76,6 +76,7 @@ a {
 }
 
 .call-back a {
+    color: #000;
     font-size: 16px;
     margin: 0 38px 0 0;
 }
@@ -88,8 +89,9 @@ a {
 }
 
 .menu {
-    padding: 37px 0 30px;
+    padding: 30px 0 32px;
     text-align: center;
+    border-top: 1px solid #EFEFEF;
 }
 
 .menu-list {
@@ -129,7 +131,7 @@ h1 {
 h2 {
     font-size: 24px;
     font-weight: 700;
-    padding: 9px 0 20px;
+    padding: 8px 0 20px;
 }
 
 h3 {
@@ -147,6 +149,12 @@ h3 {
     margin: 0;
 }
 
+h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(22/16);
+}
+
 .hero-section-text p {
     margin: 57px 0 36px 0;
 }
@@ -160,7 +168,7 @@ h3 {
 }
 
 .items-offer {
-    padding: 49px 0 100px;
+    padding: 48px 0 83px;
 }
 
 .list-card {
@@ -179,7 +187,7 @@ h3 {
     width: 255px;
     line-height: calc(20/14);
     background: #FFF;
-    padding: 25px 20px 20px;
+    padding: 25px 20px 33px;
     text-align: center;
 }
 .card img {
@@ -198,7 +206,7 @@ h3 {
 
 .info {
     overflow: hidden;
-    padding: 11px 0 40px;
+    margin: 16px 0 0 0;
 }
 
 .box {
@@ -222,8 +230,6 @@ h3 {
     float: right;
     margin-bottom: 56px;
     margin: 18px 4px 0 0;
-    /* width: 140px;
-    height: 140px; */
 }
 
 .box-text p {
@@ -235,6 +241,7 @@ h3 {
     padding: 10px 20px;
     border-radius: 30px;
     background: #FFF;
+    /* color: #C4C4C4; */
 }
 
 .box-text a {
@@ -243,14 +250,76 @@ h3 {
     margin-top: 26px;
 }
 
+.logos {
+    margin: 99px 0 0 0;
+}
+
 .list-logos {
     width: 100%;
     border-collapse: collapse;
     background-color: #FFF;
-    margin: 100px 0;
+    /* margin: 59px 0 0 0; */
 }
 
 .list-logos td {
-    padding: 35px 60px;
+    padding: 33px 0;
+    text-align: center;
     border-bottom: 1px solid #EFEFEF;
+    border-right: 1px solid #EFEFEF;;
+}
+
+.footer-navi {
+    overflow: hidden;
+    margin-right: -30px;
+}
+
+.footer-box {
+    float: left;
+    width: 25%;
+    padding: 30px 0 48px;
+}
+
+.footer-menu hr {
+    margin: 30px 30px 17px 0;
+    color: #EFEFEF;
+}
+
+.footer-menu-list {
+    font-size: 12px;
+    list-style: none;
+    color: #828282;
+    line-height: calc(28/12);
+    border-top: 1px solid #EFEFEF;
+    margin: 23px 0 0 0;
+    padding: 23px 0 0;
+    
+}
+
+.footer-soc {
+    padding: 20px 0 20px;
+    overflow: hidden;
+    border-top: 1px solid #EFEFEF;
+}
+
+.socials a{
+    color: #F13C6E;
+    font-size: 50px;
+    float: left;
+    padding-top: 14px;
+    margin-right: 14px;
+}
+
+.footer-copy {
+    color: #828282;
+    font-size: 12px;
+    overflow: hidden;
+    padding: 19px 0 10px;
+}
+
+.copyright {
+    float: left;
+}
+
+.privacy {
+    float: right;
 }
