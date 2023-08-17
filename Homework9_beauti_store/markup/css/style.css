@@ -57,6 +57,14 @@ body {
     margin: 0 14px;
 }
 
+.nav-menu a {
+    color: #333;
+}
+
+.nav-menu a:hover {
+    color: #F13C6E;
+}
+
 a {
     text-decoration: none;
 }
@@ -81,11 +89,21 @@ a {
     margin: 0 38px 0 0;
 }
 
+.call-back a:hover {
+    color: #F13C6E;
+}
+
 .btn {
     padding: 11px 54px;
     border: 2px solid #F13C6E;
     background: #FFF;
     border-radius: 40px;
+}
+
+.btn:hover {
+    border: 2px solid #FFF;
+    background: #F13C6E;
+    color: #FFF;
 }
 
 .menu {
@@ -105,6 +123,14 @@ a {
 .menu-list li {
     display: inline-block;
     margin: 0 18px;
+}
+
+.menu-list a {
+    color: #000;
+}
+
+.menu-list a:hover {
+    color: #F13C6E;
 }
 
 #main {
@@ -167,6 +193,12 @@ h5 {
     letter-spacing: 0.7px;
 }
 
+.btn-more:hover {
+    border-radius: 40px;
+    color: #F13C6E;
+    background-color: #FFF;
+}
+
 .items-offer {
     padding: 48px 0 83px;
 }
@@ -202,6 +234,10 @@ h5 {
     border-radius: 30px;
     padding: 9px 52px;
     background:#F13C6E;
+}
+
+.buy:hover {
+    padding: 9px 95px;
 }
 
 .info {
@@ -268,6 +304,10 @@ h5 {
     border-right: 1px solid #EFEFEF;;
 }
 
+.list-logos td:hover {
+    background-color: #F13C6E;
+}
+
 .footer-navi {
     overflow: hidden;
     margin-right: -30px;
@@ -285,14 +325,20 @@ h5 {
 }
 
 .footer-menu-list {
-    font-size: 12px;
     list-style: none;
-    color: #828282;
-    line-height: calc(28/12);
     border-top: 1px solid #EFEFEF;
     margin: 23px 0 0 0;
     padding: 23px 0 0;
-    
+}
+
+.footer-menu-list a {
+    color: #828282;
+    font-size: 12px;
+    line-height: calc(28/12);
+}
+
+.footer-menu-list a:hover {
+    color: #F13C6E;
 }
 
 .footer-soc {
@@ -322,4 +368,8 @@ h5 {
 
 .privacy {
     float: right;
+}
+
+.privacy a {
+    color: #828282;
 }
