@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-weight: 400;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    color: rgba(33, 56, 66, .6);
+}
+
+.menu {
+    margin: 0 auto;
+    padding:20px;
+}
+
+.menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-menu {
+    /* display: inline-block; */
+    background-color: rgb(73, 72, 67);
+    border-bottom: 5px solid rgb(0, 162, 255);
+    text-transform: uppercase;
+}
+
+
+.hero-menu>li {
+    display: inline-block;
+    padding: 15px 30px;
+    position: relative;
+    margin-right: -4px;
+}
+
+.hero-menu a {
+    display: block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: beige;
+}
+
+.sub-menu {
+    width: 200px;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: rgb(0, 162, 255);
+    border: 1px solid rgb(11, 108, 255);
+    border-radius: 0 0 5px 5px;
+    display: none;
+}
+
+.sub-menu > li {
+    position: relative;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgb(11, 108, 255);
+    text-transform: none;
+}
+
+.sub-menu .sub-menu {
+    top: 50%;
+    left: 100%;
+    right: auto;
+}
+
+.sub-menu a{
+    display: block;
+}
+
+.hero-menu li:hover > .sub-menu {
+    display: block;
+}
+
+.hero-menu li:hover {
+    background-color: rgb(0, 162, 255);
+}
