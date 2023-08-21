@@ -43,7 +43,6 @@ ul {
 }
 
 .hero-menu {
-    /* display: inline-block; */
     background-color: rgb(73, 72, 67);
     border-bottom: 5px solid rgb(0, 162, 255);
     text-transform: uppercase;
