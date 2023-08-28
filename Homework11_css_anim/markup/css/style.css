@@ -16,3 +16,157 @@
     font-display: swap;
 }
 
+body {
+    font-family: 'Montserrat', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background: gray;
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#header {
+
+}
+
+#header .container {
+    padding: 30px 60px;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    text-transform: uppercase;
+}
+
+.menu-wrap {
+    position: relative;
+    left: 95%;
+    top: 10px;
+    display: inline-block;
+}
+
+.wrapper {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.wrapper:before, 
+.wrapper:after, 
+.wrapper span {
+    content: "";
+    width: 18px;
+    height: 2px; 
+    position: absolute;
+    background: #000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .8;
+}
+
+.wrapper:before {
+    top: 35%;
+}
+
+.wrapper:after {
+    top: 65%;
+}
+
+#wrap:checked+.wrapper:before {
+    transform: translate(-50%, -50%) rotate(225deg);
+}
+
+#wrap:checked+.wrapper:after {
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+#wrap:checked+.wrapper span {
+    width: 0;
+}
+
+#wrap:checked~.menu {
+    transform: translateX(0);
+}
+
+#wrap:checked
+
+#wrap {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu {
+    width: 300px;
+    position: fixed;
+    inset: 0 0 0 auto;
+    transform: translateX(100%);
+    background: #fff;
+    padding: 50px 50px 0;
+}
+
+.socials {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0 0 20px;
+    margin: 0;
+}
+
+.socials li {
+    padding: 20px 0;
+}
+
+li span {
+    padding-right: 15px;
+}
+
+.socials a {
+    color: gray;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 20px 30px;
+    background: rgb(253, 111, 93);
+    border: 1px solid rgb(224, 68, 68);
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn:hover {
+    box-shadow: inset 1px 1px 2px #fff, 2px 3px 2px rgba(0, 0, 0, .5);
+}
+
+h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 300;
+}
+
+#main {
+    max-height: 100vh;
+}
+
+.hero_section {
+    padding: 150px 0 50px;
+}
+
+.hero_section .container {
+    text-align: center;
+}
+
