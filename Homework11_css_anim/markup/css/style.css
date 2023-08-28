@@ -52,6 +52,7 @@ body {
     background: #fff;
     left: 50%;
     top: 50%;
+    transform: translateX(-50%);
     transition: all .8s;
 }
 
