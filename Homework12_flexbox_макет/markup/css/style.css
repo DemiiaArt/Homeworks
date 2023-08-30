@@ -15,3 +15,136 @@
     font-style: normal;
     font-display: swap;
 }
+
+.container {
+    width: 1330px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body {
+    font-family: 'Graphik LCG', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #000;
+    line-height: 150%;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+h3 {
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 116%;
+}
+
+h4 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.footer-nav h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 134%;
+}
+
+h6 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 11px 36px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    min-width: 160px;
+    margin-right: 10px;
+}
+
+.btn--bg {
+    color: #fff;
+    background: #FF6336;
+    border: 1px solid #FF6336;
+}
+
+.btn--lg {
+    padding: 20px 42px;
+}
+
+.btn--bgdarck {
+    background: #000;
+    color: #fff;
+}
+
+header {
+    border-bottom: 1px solid #CCC;
+    font-size: 15px;
+    line-height: 133%;
+    padding: 25px 0;
+}
+
+.hold {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -20px;
+}
+
+.hold-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 130px;
+    height: 28px;
+    margin-right: 24px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    padding: 0 26px;
+}
+
+.menu a {
+    text-decoration: none;
+}
