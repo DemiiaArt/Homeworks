@@ -53,6 +53,7 @@ h3 {
     font-size: 65px;
     font-weight: 600;
     line-height: 116%;
+    margin: 0;
 }
 
 h4 {
@@ -69,6 +70,7 @@ h5 {
     font-size: 30px;
     font-weight: 600;
     line-height: 134%;
+    margin: 52px 0 12px;
 }
 
 h6 {
@@ -175,20 +177,26 @@ header {
     padding: 22px 0 0 ;
 }
 
+.hold-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    line-height: 120%;
+}
+
+.hold-center h2 {
+    text-align: center;
+}
+
 .red {
     background: #FF9C7D;
 }
 
-.hold-logos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
+.red1 {
     padding: 118px 0 104px;
-}
-
-.hold-logos h2 {
-    align-self: center;
 }
 
 .list {
@@ -278,4 +286,159 @@ header {
 .pic {
     width: 160px;
     height: 120px;
+}
+
+.dir-list {
+    list-style: none;
+    margin: 0;
+    padding: 110px 0 88px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dir-list li {
+    width: calc(100% / 3);
+}
+
+.dir-list li + li {
+    margin-left: 9px;
+}
+
+.dir-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.dir-pic {
+    height: 200px; 
+    display: flex;
+    align-items: center;
+}
+
+.quote {
+    background: #C9E8F2;
+}
+
+.row-top {
+    align-items: flex-start;
+    padding: 52px 0 105px;
+}
+
+.quote-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 70%;
+}
+
+q {
+    font-size: 30px;
+    line-height: 133%;
+    margin: 12px 0 25px;
+}
+
+.quote-text img {
+    width: 115px;
+    height: 30px;
+}
+
+.rating {
+    background: #DABC98;
+    padding: 69px 0;
+}
+
+.rating-text {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 143%;
+}
+
+.rating-img {
+    margin-right: 67px;
+}
+
+.rating-img img {
+    width: 176px;
+    height: 154px;
+    max-width: none;
+}
+
+.rating-cards {
+    display: flex;
+    justify-content: flex-start;
+    padding: 41px 0;
+    border-left: 1px solid #000;
+    width: 50%;
+}
+
+.rating-cards img {
+    height: 116px;
+    width: auto;
+    padding-left: 71px;
+}
+
+.pad-160 {
+    padding: 160px 0 150px;
+}
+
+.hold-center p {
+    margin: 0 0 26px 0;
+}
+
+.red2 .hold-center {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.red2 p {
+    margin: 33px 0 26px 0;
+}
+
+.red2 {
+    padding: 119px 0 145px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dir-card>img {
+    width: 80px;
+    height: 32px;
+}
+
+.footer-nav {
+    display: flex;
+    /* justify-content: space-between; */
+    font-size: 15px;
+    line-height: 100%;
+    width: 100%;
+}
+
+.column {
+    width: calc(100% / 4);
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list li {
+    padding: 7px;
+}
+
+
+
+.logo-foter img {
+    width: 90px;
+    height: 21px;
 }
