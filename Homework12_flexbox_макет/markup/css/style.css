@@ -39,9 +39,11 @@ h1 {
     font-size: 65px;
     font-weight: 600;
     line-height: 110%;
+    margin: 0 0 49px;
 }
 
 h2 {
+    margin: 0;
     font-size: 50px;
     font-weight: 600;
     line-height: 120%;
@@ -73,6 +75,7 @@ h6 {
     font-size: 25px;
     font-weight: 600;
     line-height: 140%;
+    margin: 25px 0 0 0;
 }
 
 img {
@@ -103,6 +106,7 @@ img {
 
 .btn--lg {
     padding: 20px 42px;
+    margin: 25px 0 14px;
 }
 
 .btn--bgdarck {
@@ -147,4 +151,131 @@ header {
 
 .menu a {
     text-decoration: none;
+}
+
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 127px 0 50px;
+    font-size: 25px;
+    line-height: 140%;
+}
+
+.hero-text-box {
+    width: 43%;
+}
+
+.note {
+    font-size: 15px;
+    line-height: 167%;
+}
+
+.hero-img {
+    padding: 22px 0 0 ;
+}
+
+.red {
+    background: #FF9C7D;
+}
+
+.hold-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 118px 0 104px;
+}
+
+.hold-logos h2 {
+    align-self: center;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 71px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.present {
+    padding: 90px 0 150px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row + .row {
+    padding-top: 250px;
+}
+
+.row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.row-box {
+    width: 49% ;
+}
+
+.row-text {
+    width: 40%;
+}
+
+.action {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.benefits {
+    background: #FFF8E4;
+}
+
+.list-cards {
+    list-style: none;
+    margin: 0;
+    padding: 55px 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    padding: 118px 0 105px;
+}
+
+.list-cards li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 28px 50px;
+    width: calc(100% / 3);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 139%;
+}
+
+.cards h2 {
+    align-self: center;
+}
+
+.pic {
+    width: 160px;
+    height: 120px;
 }
