@@ -443,7 +443,8 @@ q {
 
 .quote-text img {
     width: 115px;
-    height: 30px;
+    height: 25px;
+    margin-top: 5px;
 }
 
 .rating {
@@ -575,7 +576,7 @@ footer {
 
 .logo-foter img {
     width: 90px;
-    height: 21px;
+    height: 22px;
     margin-right: 14px;
 }
 
