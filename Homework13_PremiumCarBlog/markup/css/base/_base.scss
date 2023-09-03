@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../../fonts/PTSans-Regular.woff2') format('woff2'),
+        url('../../fonts/PTSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../../fonts/PTSans-Bold.woff2') format('woff2'),
+        url('../../fonts/PTSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    color: $black;
+}
+
+.container {
+    max-width: 1210px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: normal;
+    // padding: 16px 82px;
+    width: 100%;
+    text-align: center;
+    color: $white;
+    background: $button;
+    border-radius: 5px;
+}
+
+.pages {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    padding: 12px 15px;
+    background: $white;
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: normal;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 112%;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 139%;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: normal;
+}
