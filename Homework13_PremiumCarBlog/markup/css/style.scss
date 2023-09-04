@@ -7,12 +7,12 @@
 @import "./components/tag";
 @import "./components/button";
 @import "./components/card";
-@import "./components/big_card";
-@import "./components/small_card";
+@import "./components/pages";
+@import "./components/form";
 
 
 header {
-    background: #000;
+    background: $black_bg;
 }
 
 .hold_between {
@@ -33,6 +33,19 @@ header {
     .menu {
         display: flex;
         justify-content: space-around;
+
+        li {
+            padding: $tag-ptop $tag-py $tag-pbot;
+            border-radius: $tag-br;
+
+            &:hover {
+                background: $accent;
+            }
+
+            a {
+                display: block;
+            }
+        }
     }
 }
 
@@ -66,54 +79,6 @@ header {
     }
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    border-radius: $br;
-    overflow: hidden;
-    color: $white;
-
-    .visual {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        inset: 0;
-
-        &:after {
-            content: "";
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.75) 82.82%);
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 60%;
-        }
-    }
-
-    img {
-        max-width: none;
-        vertical-align: bottom;
-        object-fit: cover;
-        height: 100%;
-        object-position: 50% 50%;
-    }
-
-    .card_body {
-        display: flex;
-        flex-direction: column;
-        z-index: 2;
-        padding-top: 150px;
-
-        p {
-            margin-bottom: 6px;
-        }
-    }
-}
-
 .rewers {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -124,40 +89,18 @@ header {
         justify-content: flex-start;
         width: calc(100% / 4);
     }
+
+    .col:last-child {
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
 }
 
 .hold {
     margin-bottom: 60px;
-}
-
-.small_card {
     display: flex;
     flex-direction: column;
-    position: relative;
-    
-    .visual {
-        position: relative;
-        padding-top: 70%;
-        border-radius: $br;
-        overflow: hidden;
-        
-        img {
-            max-width: none;
-            height: 100%;
-            position: absolute;
-            inset: 0;
-            object-fit: cover;
-        }
-    }
-    
-    i {
-        color: $text_lite;
-        margin-top: 8px;
-    }
-    
-    +p {
-        margin: 14px 0 21px 0;
-    }
 }
 
 .small_list {
@@ -181,68 +124,30 @@ header {
     padding-top: 100%;
     border-radius: $br;
     overflow: hidden;
-
+    
     img {
-        max-width: none;
-        height: 100%;
-        position: absolute;
-        inset: 0;
-        object-fit: cover;
+        @extend %img;
     }
-}
-
-.big_card {
-    display: flex;
-    flex-direction: column;
-
-    &_body {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        padding: 30px;
-        margin: -125px 20px 0;
-        border-radius: $br;
-        background: $white;
-        box-shadow: $box_shad;
-        line-height: 171%;
-    }
-
-    .visual {
-        position: relative;
-        padding-top: 55%;
-        border-radius: $br;
-        overflow: hidden;
-
-        img {
-            max-width: none;
-            height: 100%;
-            position: absolute;
-            inset: 0;
-            object-fit: cover;
-        }
-    }
-
-    p {
-        margin: 14px 0 0 0;
-    }
-}
-
-.big_list li {
-    padding-bottom: 60px;
 }
 
 .hold_form {
     line-height: 171%;
 }
 
-.form {
+.big_list li {
+    padding-bottom: 60px;
+}
+
+.horiz_cards {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    input {
-        color: $input;
-        border: 1px solid $input;
-        padding: 17px 15px 15px;
-        border-radius: 3px;
+    margin: 0 -15px;
+
+    >li {
+    width: calc(100% / 4);
+    padding: 0 15px;
     }
+}
+
+.hold_section {
+    padding: 45px 0 60px;
 }

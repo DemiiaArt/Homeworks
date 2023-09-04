@@ -1,0 +1,37 @@
+.list_pages {
+    display: flex;
+    padding: 10px 5px;
+
+    >li {
+        margin: 5px;
+        align-items: center;
+
+        a:hover {
+            background: $black_bg;
+            color: $white;
+        }
+    }
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+
+    a {
+        display: block;
+        padding: 12px 16px;
+        color: $black;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        background: $white;
+        border-radius: 5px;
+        border: 1px solid $pages;
+
+        &:hover {}
+    }
+
+    >a:hover {
+        background: $accent;
+    }
+}

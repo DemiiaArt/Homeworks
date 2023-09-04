@@ -32,14 +32,19 @@
 
     li {
         padding: 5px;
-    }
-
-    a {
-        display: block;
-        color: $black;
-        padding: $tag-ptop $tag-py $tag-pbot;
         border-radius: $tag-br;
-        background: $tags_bg;
         line-height: 18px;
+        
+        a {
+            display: block;
+            padding: $tag-ptop $tag-py $tag-pbot;
+            background: $tags_bg;
+            color: $black;
+            
+            &:hover {
+                background: $accent;
+                color: $white;
+            }
+        }
     }
 }

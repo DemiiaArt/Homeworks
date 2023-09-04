@@ -8,6 +8,11 @@
     border-radius: $br;
     display: block;
     color: $white;
+    position: relative;
+
+    &:hover {
+        background: $accent;
+    }
 
     img {
         width: 16px;
