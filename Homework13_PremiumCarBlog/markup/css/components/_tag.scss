@@ -13,7 +13,33 @@
         z-index: 3;
     }
 
+    .small_card & {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 3;
+    }
+
     .big_card & {
         align-self: flex-start;
+    }
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+
+    li {
+        padding: 5px;
+    }
+
+    a {
+        display: block;
+        color: $black;
+        padding: $tag-ptop $tag-py $tag-pbot;
+        border-radius: $tag-br;
+        background: $tags_bg;
+        line-height: 18px;
     }
 }

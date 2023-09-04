@@ -1,19 +1,28 @@
 $white: #fff;
 $text: #666;
-$button: #232323;
-$tags: #EBEBEB;
+$text_lite: #999;
+$button_bg: #232323;
+$tags_bg: #EBEBEB;
 $black: #171717;
 $accent: #4A90E2;
+$input: #AEB3BB;
 $box_shad: 0px 3px 10px 0px rgba(0, 0, 0, 0.10);
 
 
 // tag
 $tag-fs: 12px;
 $tag-lh: 100%;
-$tag-ptop: 5px;
-$tag-pbot: 3px;
-$tag-py: 12px;
+$tag-ptop: 7px;
+$tag-pbot: 5px;
+$tag-py: 14px;
 $tag-br: 3px;
 
 // img
 $br: 5px;
+
+// button
+$btn-ptop: 17px;
+$btn-pbot: 15px;
+$btn-lh: normal;
+$btn-fs: 14px;
+$btn-fw: 700;

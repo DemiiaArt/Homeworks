@@ -45,11 +45,11 @@ header {
 .col {
     padding: 0 15px;
     display: flex;
-    
+
     &:first-child {
         width: calc(100% / 3);
     }
-    
+
     &:last-child {
         width: calc((100% / 3)*2);
     }
@@ -126,16 +126,21 @@ header {
     }
 }
 
+.hold {
+    margin-bottom: 60px;
+}
+
 .small_card {
     display: flex;
     flex-direction: column;
-
+    position: relative;
+    
     .visual {
         position: relative;
         padding-top: 70%;
         border-radius: $br;
         overflow: hidden;
-
+        
         img {
             max-width: none;
             height: 100%;
@@ -143,6 +148,46 @@ header {
             inset: 0;
             object-fit: cover;
         }
+    }
+    
+    i {
+        color: $text_lite;
+        margin-top: 8px;
+    }
+    
+    +p {
+        margin: 14px 0 21px 0;
+    }
+}
+
+.small_list {
+    margin-bottom: -60px;
+
+    li {
+        padding-bottom: 40px;
+    }
+}
+
+.cards_small {
+    margin: -5px -5px 5px -5px;
+
+    >li {
+        padding: 5px;
+    }
+}
+
+.img {
+    position: relative;
+    padding-top: 100%;
+    border-radius: $br;
+    overflow: hidden;
+
+    img {
+        max-width: none;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        object-fit: cover;
     }
 }
 
@@ -184,4 +229,20 @@ header {
 
 .big_list li {
     padding-bottom: 60px;
+}
+
+.hold_form {
+    line-height: 171%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    input {
+        color: $input;
+        border: 1px solid $input;
+        padding: 17px 15px 15px;
+        border-radius: 3px;
+    }
 }
