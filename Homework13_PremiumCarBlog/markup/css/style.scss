@@ -3,6 +3,7 @@
 @import "./base/variable";
 @import "./base/mixin";
 @import "./base/base";
+
 // Style Start
 @import "./components/tag";
 @import "./components/button";
@@ -35,15 +36,14 @@ header {
         justify-content: space-around;
 
         li {
-            padding: $tag-ptop $tag-py $tag-pbot;
-            border-radius: $tag-br;
-
-            &:hover {
-                background: $accent;
-            }
-
             a {
                 display: block;
+                padding: $tag-ptop $tag-py $tag-pbot;
+                border-radius: $tag-br;
+                
+                &:hover {
+                    background: $accent;
+                }
             }
         }
     }
@@ -80,20 +80,20 @@ header {
 }
 
 .rewers {
-    flex-direction: row-reverse;
     justify-content: space-between;
     padding: 45px 0 0 0;
 
     .col:first-child {
         flex-direction: column;
         justify-content: flex-start;
-        width: calc(100% / 4);
+        width: calc((100% / 3)*2);
+
     }
 
     .col:last-child {
         flex-direction: column;
         justify-content: flex-start;
-        
+        width: calc(100% / 4);
     }
 }
 
@@ -120,6 +120,7 @@ header {
 }
 
 .img {
+    display: block;
     position: relative;
     padding-top: 100%;
     border-radius: $br;

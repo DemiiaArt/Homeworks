@@ -331,14 +331,14 @@ template {
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../../fonts/PTSans-Regular.woff2") format("woff2"), url("../../fonts/PTSans-Regular.woff") format("woff");
+  src: url("../fonts/PTSans-Regular.woff2") format("woff2"), url("../fonts/PTSans-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
-  src: url("../../fonts/PTSans-Bold.woff2") format("woff2"), url("../../fonts/PTSans-Bold.woff") format("woff");
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -372,6 +372,9 @@ img {
 
 a {
   text-decoration: none;
+  color: #171717;
+}
+h4 > a, .card a, .menu a {
   color: #fff;
 }
 
@@ -440,7 +443,7 @@ h6 {
   position: absolute;
   top: 30px;
   left: 22px;
-  z-index: 3;
+  z-index: 10;
 }
 .small_card .tag_color {
   position: absolute;
@@ -459,11 +462,11 @@ h6 {
 }
 .tags li {
   padding: 5px;
-  border-radius: 3px;
-  line-height: 18px;
 }
 .tags li a {
   display: block;
+  border-radius: 3px;
+  line-height: 18px;
   padding: 7px 14px 6px;
   background: #EBEBEB;
   color: #171717;
@@ -516,7 +519,7 @@ h6 {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 60%;
+  height: 70%;
 }
 .card img {
   max-width: none;
@@ -530,10 +533,14 @@ h6 {
 .card .card_body {
   display: flex;
   flex-direction: column;
-  z-index: 2;
+  z-index: 4;
   padding-top: 150px;
+  transition: all 0.8s;
 }
-.card .card_body p {
+.card .card_body:hover {
+  transform: translateY(-20px);
+}
+.card .card_body time {
   margin-bottom: 6px;
 }
 
@@ -561,7 +568,7 @@ h6 {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 30px;
+  padding: 30px 70px 30px 30px;
   margin: -125px 20px 0;
   border-radius: 5px;
   background: #fff;
@@ -625,7 +632,6 @@ h6 {
 }
 .form input:invalid {
   border: 1px solid red;
-  color: red;
 }
 
 header {
@@ -651,15 +657,13 @@ header {
   display: flex;
   justify-content: space-around;
 }
-.header-menu .menu li {
+.header-menu .menu li a {
+  display: block;
   padding: 7px 14px 6px;
   border-radius: 3px;
 }
-.header-menu .menu li:hover {
+.header-menu .menu li a:hover {
   background: #4A90E2;
-}
-.header-menu .menu li a {
-  display: block;
 }
 
 .row_cards {
@@ -690,18 +694,18 @@ header {
 }
 
 .rewers {
-  flex-direction: row-reverse;
   justify-content: space-between;
   padding: 45px 0 0 0;
 }
 .rewers .col:first-child {
   flex-direction: column;
   justify-content: flex-start;
-  width: 25%;
+  width: 66.6666666667%;
 }
 .rewers .col:last-child {
   flex-direction: column;
   justify-content: flex-start;
+  width: 25%;
 }
 
 .hold {
@@ -725,6 +729,7 @@ header {
 }
 
 .img {
+  display: block;
   position: relative;
   padding-top: 100%;
   border-radius: 5px;
