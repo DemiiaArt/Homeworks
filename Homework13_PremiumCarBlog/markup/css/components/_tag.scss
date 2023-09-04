@@ -1,0 +1,19 @@
+.tag_color {
+    font-size: $tag-fs;
+    line-height: $tag-lh;
+    padding: $tag-ptop $tag-py $tag-pbot;
+    border-radius: $tag-br;
+    color: $white;
+    background: $accent;
+
+    .card & {
+        position: absolute;
+        top: 30px;
+        left: 22px;
+        z-index: 3;
+    }
+
+    .big_card & {
+        align-self: flex-start;
+    }
+}

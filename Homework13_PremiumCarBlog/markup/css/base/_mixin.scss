@@ -1,0 +1,8 @@
+
+// h2-h6  @include h
+@mixin h($fw: 700, $fs: 30px, $lh:normal) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $black;
+}

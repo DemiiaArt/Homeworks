@@ -17,17 +17,23 @@
 }
 
 body {
-    font-family: 'PT Sans';
-    font-weight: 400;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: normal;
     font-size: 14px;
     line-height: normal;
-    color: $black;
+    color: $text;
 }
 
 .container {
     max-width: 1210px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 img {
@@ -64,32 +70,29 @@ a {
     border: 1px solid #E5E5E5;
 }
 
+// @mixin h($fw: 700, $fs: 30px, $lh:normal)
 h2 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: normal;
+    @include h;
 }
-
 h3 {
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 112%;
+    @include h ($fs: 25px, $lh: 112%);
+    margin: 22px 0 15px;
 }
 
 h4 {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 139%;
+    @include h ($fs: 26px, $lh: 139%);
+    color: $white;
 }
 
 h5 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 150%;
+    @include h ($fs: 20px, $lh: 150%);
+    margin: 0;
+
+    .card & {
+        color: $white;
+    }
 }
 
 h6 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: normal;
+    @include h ($fs: 18px);
 }
