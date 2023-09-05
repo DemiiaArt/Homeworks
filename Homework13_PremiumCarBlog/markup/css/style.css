@@ -907,6 +907,9 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.socials li:hover {
+  background: #4A90E2;
+}
 
 .form {
   display: flex;
