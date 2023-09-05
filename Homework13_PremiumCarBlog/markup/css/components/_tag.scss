@@ -5,6 +5,12 @@
     border-radius: $tag-br;
     color: $white;
     background: $accent;
+    border: 1px solid $accent;
+
+    &:hover {
+        color: $accent;
+        background: $white;
+    }
 
     .card & {
         position: absolute;

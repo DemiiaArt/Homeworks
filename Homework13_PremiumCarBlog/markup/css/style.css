@@ -657,6 +657,11 @@ header {
   border-radius: 3px;
   color: #fff;
   background: #4A90E2;
+  border: 1px solid #4A90E2;
+}
+.tag_color:hover {
+  color: #4A90E2;
+  background: #fff;
 }
 .card .tag_color {
   position: absolute;
@@ -778,6 +783,9 @@ header {
 .small_card + p {
   margin: 5px 0 22px 0;
 }
+.small_card h5 > a:hover {
+  color: #4A90E2;
+}
 
 .big_card {
   display: flex;
@@ -793,6 +801,9 @@ header {
   background: #fff;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
   line-height: 171%;
+}
+.big_card_body h3 > a:hover {
+  color: #4A90E2;
 }
 .big_card .visual {
   padding-top: 58%;
@@ -820,6 +831,9 @@ header {
 }
 .card_mini .card_body {
   line-height: 100%;
+}
+.card_mini .card_body a:hover {
+  color: #4A90E2;
 }
 .card_mini .card_body h6 {
   display: -webkit-box;

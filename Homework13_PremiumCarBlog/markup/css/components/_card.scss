@@ -71,6 +71,10 @@
     +p {
         margin: 5px 0 22px 0;
     }
+
+    h5>a:hover {
+        color: $accent;
+    }
 }
 
 .big_card {
@@ -87,6 +91,10 @@
         background: $white;
         box-shadow: $box_shad;
         line-height: 171%;
+
+        h3>a:hover {
+            color: $accent;
+        }
     }
 
     .visual {
@@ -125,6 +133,10 @@
 
     .card_body {
         line-height: 100%;
+
+        a:hover {
+            color: $accent;
+        }
         
         h6 {
             display: -webkit-box;
