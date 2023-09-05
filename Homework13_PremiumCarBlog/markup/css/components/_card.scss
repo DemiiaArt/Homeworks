@@ -36,7 +36,7 @@
         display: flex;
         flex-direction: column;
         z-index: 4;
-        padding-top: 150px;
+        padding-top: 140px;
         transition: all .8s;
 
         &:hover {
@@ -55,7 +55,7 @@
     position: relative;
 
     .visual {
-        padding-top: 70%;
+        padding-top: 71%;
         @extend %box_img;
 
         img {
@@ -69,7 +69,7 @@
     }
 
     +p {
-        margin: 14px 0 21px 0;
+        margin: 5px 0 22px 0;
     }
 }
 
@@ -81,8 +81,8 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        padding: 30px 70px 30px 30px;
-        margin: -125px 20px 0;
+        padding: 26px 70px 25px 30px;
+        margin: -135px 20px 0;
         border-radius: $br;
         background: $white;
         box-shadow: $box_shad;
@@ -90,7 +90,7 @@
     }
 
     .visual {
-        padding-top: 55%;
+        padding-top: 58%;
         @extend %box_img;
 
         img {

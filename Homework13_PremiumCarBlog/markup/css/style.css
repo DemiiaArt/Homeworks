@@ -351,6 +351,12 @@ body {
   color: #666;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .container {
   max-width: 1210px;
   margin: 0 auto;
@@ -414,7 +420,7 @@ h5 {
 }
 .small_card h5 {
   line-height: 140%;
-  margin: 20px 0 2px;
+  margin: 23px 0 2px;
 }
 .foot_col h5 {
   line-height: normal;
@@ -426,10 +432,10 @@ h6 {
   font-size: 18px;
   line-height: normal;
   color: #171717;
-  margin: 20px 0 8px 0;
+  margin: 30px 0 0 0;
 }
 .hold > h6 {
-  margin: 0 0 23px 0;
+  margin: 0 0 30px 0;
 }
 .hold_form h6 {
   margin: 0;
@@ -504,7 +510,7 @@ header {
   padding: 30px 0;
 }
 .row_cards:first-child {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .col {
@@ -530,7 +536,7 @@ header {
 
 .rewers {
   justify-content: space-between;
-  padding: 45px 0 0 0;
+  padding: 50px 0 0 0;
 }
 .rewers .col:first-child {
   flex-direction: column;
@@ -547,13 +553,15 @@ header {
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
+  font-size: 15px;
+  line-height: 167%;
 }
 
 .small_list {
   margin-bottom: -60px;
 }
 .small_list li {
-  padding-bottom: 40px;
+  padding-bottom: 43px;
 }
 
 .cards_small {
@@ -574,7 +582,7 @@ header {
 }
 
 .big_list li {
-  padding-bottom: 60px;
+  padding-bottom: 58px;
 }
 
 .horiz_cards {
@@ -587,12 +595,12 @@ header {
 }
 
 .hold_section {
-  padding: 45px 0 20px;
+  padding: 27px 0 20px;
 }
 
 .footer_bg:first-child {
   background: #171717;
-  padding: 60px 0 50px;
+  padding: 54px 0 25px;
 }
 .footer_bg:last-child {
   background: #000;
@@ -616,14 +624,14 @@ header {
   font-size: 14px;
   font-weight: 400;
   line-height: 157%;
-  padding-bottom: 64px;
+  padding-bottom: 39px;
 }
 
 .logo {
   display: block;
   width: 100px;
   height: 23px;
-  margin: 36px 0;
+  margin: 33px 0;
 }
 
 .menu {
@@ -745,7 +753,7 @@ header {
   display: flex;
   flex-direction: column;
   z-index: 4;
-  padding-top: 150px;
+  padding-top: 140px;
   transition: all 0.8s;
 }
 .card .card_body:hover {
@@ -761,14 +769,14 @@ header {
   position: relative;
 }
 .small_card .visual {
-  padding-top: 70%;
+  padding-top: 71%;
 }
 .small_card i {
   color: #999;
   margin-top: 8px;
 }
 .small_card + p {
-  margin: 14px 0 21px 0;
+  margin: 5px 0 22px 0;
 }
 
 .big_card {
@@ -779,15 +787,15 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 30px 70px 30px 30px;
-  margin: -125px 20px 0;
+  padding: 26px 70px 25px 30px;
+  margin: -135px 20px 0;
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
   line-height: 171%;
 }
 .big_card .visual {
-  padding-top: 55%;
+  padding-top: 58%;
 }
 .big_card p {
   margin: 14px 0 0 0;
@@ -915,6 +923,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 27px;
 }
 .form button {
   border: none;
@@ -937,4 +946,5 @@ header {
   border: none;
   border-radius: 3px;
   background: #373737;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
