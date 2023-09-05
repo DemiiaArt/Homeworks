@@ -813,6 +813,12 @@ header {
 .card_mini .card_body {
   line-height: 100%;
 }
+.card_mini .card_body h6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 .list_pages {
   display: flex;
