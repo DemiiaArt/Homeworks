@@ -53,21 +53,21 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    
+
     .visual {
         padding-top: 70%;
         @extend %box_img;
-        
+
         img {
             @extend %img;
         }
     }
-    
+
     i {
         color: $text_lite;
         margin-top: 8px;
     }
-    
+
     +p {
         margin: 14px 0 21px 0;
     }
@@ -100,5 +100,30 @@
 
     p {
         margin: 14px 0 0 0;
+    }
+}
+
+.card_mini {
+    display: flex;
+    // justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+
+    .visual {
+        border-radius: $br;
+        overflow: hidden;
+        width: 95px;
+        height: 95px;
+        flex-shrink: 0;
+
+        img {
+            // max-height: 100%;
+            object-fit: cover;
+            aspect-ratio: 1/1;
+        }
+    }
+
+    .card_body {
+        line-height: 100%;
     }
 }

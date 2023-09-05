@@ -49,8 +49,9 @@ a {
 
     h4>&,
     .card &,
-    .menu & {
-        color: $white
+    .menu &,
+    .footer_hold & {
+        color: $white;
     }
 }
 
@@ -81,6 +82,11 @@ h5 {
         line-height: 140%;
         margin: 20px 0 2px;
     }
+
+    .foot_col & {
+        line-height: normal;
+        color: $white;
+    }
 }
 
 h6 {
@@ -93,5 +99,10 @@ h6 {
 
     .hold_form & {
         margin: 0;
+    }
+
+    .card_mini & {
+        font-size: 15px;
+        line-height: 173%;
     }
 }

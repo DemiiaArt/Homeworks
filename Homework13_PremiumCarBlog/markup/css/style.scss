@@ -3,8 +3,10 @@
 @import "./base/variable";
 @import "./base/mixin";
 @import "./base/base";
+@import "./base/icomon";
 
 // Style Start
+@import "./components/identity";
 @import "./components/tag";
 @import "./components/button";
 @import "./components/card";
@@ -22,16 +24,12 @@ header {
     align-items: center;
 }
 
-.logo {
-    width: 100px;
-    height: 23px;
-    margin: 36px 0;
-}
 
-.header-menu {
+
+.menu {
     width: 35%;
 
-    .menu {
+    &-list {
         display: flex;
         justify-content: space-around;
 
@@ -40,7 +38,7 @@ header {
                 display: block;
                 padding: $tag-ptop $tag-py $tag-pbot;
                 border-radius: $tag-br;
-                
+
                 &:hover {
                     background: $accent;
                 }
@@ -125,7 +123,7 @@ header {
     padding-top: 100%;
     border-radius: $br;
     overflow: hidden;
-    
+
     img {
         @extend %img;
     }
@@ -144,11 +142,73 @@ header {
     margin: 0 -15px;
 
     >li {
-    width: calc(100% / 4);
-    padding: 0 15px;
+        width: calc(100% / 4);
+        padding: 0 15px;
     }
 }
 
 .hold_section {
     padding: 45px 0 60px;
+}
+
+.footer_bg {
+    &:first-child {
+        background: $black;
+        padding: 60px 0 50px;
+    }
+
+    &:last-child {
+        background: $black_bg;
+        padding: 38px 0;
+    }
+}
+
+.footer_hold {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.foot_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: calc(100% / 3);
+    padding-right: 100px;
+
+    .text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 157%;
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 23px;
+
+    li {
+        margin-right: 15px;
+        background: #373737;
+        border-radius: 3px;
+        flex-shrink: 0;
+        font-size: 18px;
+        position: relative;
+        
+        a {
+            display: block;
+            width: 34px;
+            height: 34px;
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+
 }
