@@ -1,0 +1,107 @@
+.row_cards {
+    display: flex;
+    margin: 0 -15px;
+    padding: 30px 0;
+
+    &:first-child {
+        margin-top: 100px;
+    }
+}
+
+.col {
+    padding: 0 15px;
+    display: flex;
+
+    &:first-child {
+        width: calc(100% / 3);
+    }
+
+    &:last-child {
+        width: calc((100% / 3)*2);
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    >li {
+        width: 50%;
+        padding: 15px;
+    }
+}
+
+.rewers {
+    justify-content: space-between;
+    padding: 45px 0 0 0;
+
+    .col:first-child {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: calc((100% / 3)*2);
+
+    }
+
+    .col:last-child {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: calc(100% / 4);
+    }
+}
+
+.hold {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.small_list {
+    margin-bottom: -60px;
+
+    li {
+        padding-bottom: 40px;
+    }
+}
+
+.cards_small {
+    margin: -5px -5px 5px -5px;
+
+    >li {
+        padding: 5px;
+    }
+
+    .img {
+        display: block;
+        position: relative;
+        padding-top: 100%;
+        border-radius: $br;
+        overflow: hidden;
+    
+        img {
+            @extend %img;
+        }
+    }
+}
+
+.hold_form {
+    line-height: 171%;
+}
+
+.big_list li {
+    padding-bottom: 60px;
+}
+
+.horiz_cards {
+    display: flex;
+    margin: 0 -15px;
+
+    >li {
+        width: calc(100% / 4);
+        padding: 0 15px;
+    }
+}
+
+.hold_section {
+    padding: 45px 0 20px;
+}

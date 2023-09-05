@@ -1,0 +1,32 @@
+.footer_bg {
+    &:first-child {
+        background: $black;
+        padding: 60px 0 50px;
+    }
+
+    &:last-child {
+        background: $black_bg;
+        padding: 38px 0;
+    }
+}
+
+.footer_hold {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.foot_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: calc(100% / 3);
+    padding-right: 100px;
+
+    .text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 157%;
+        padding-bottom: 64px;
+    }
+}

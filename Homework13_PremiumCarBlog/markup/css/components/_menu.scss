@@ -1,0 +1,20 @@
+.menu {
+    width: 35%;
+
+    &-list {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            a {
+                display: block;
+                padding: $tag-ptop $tag-py $tag-pbot;
+                border-radius: $tag-br;
+
+                &:hover {
+                    background: $accent;
+                }
+            }
+        }
+    }
+}
