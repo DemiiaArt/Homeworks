@@ -263,7 +263,7 @@ header {
     z-index: 10;
     transition: all .5s ease-in-out;
     position: absolute;
-    top: 15px;
+    top: 10px;
     right: 15px;
     width: 50px;
     height: 50px;
@@ -280,10 +280,11 @@ header {
 .opener:after,
 .opener span {
     content: "";
-    width: 30px;
-    height: 3px;
+    width: 25px;
+    height: 4px;
     position: absolute;
-    background: #000;
+    background: #FFC500;
+    border: 1px solid #2e2e2e;
     left: 50%;
     top: 50%;
     transform: translateX(-50%);
@@ -291,11 +292,13 @@ header {
 }
 
 .opener:before {
-    top: 35%;
+    top: 33%;
+    background: #A4A14A;
 }
 
 .opener::after {
-    top: 65%;
+    top: 67%;
+    background: #FF6336;
 }
 
 .hold-logo {
@@ -371,8 +374,7 @@ header {
 
 #opener:checked~.opener>span {
     width: 0;
-    background: rgba(121, 121, 121, 0);
-    ;
+    opacity: 0;
 }
 
 #opener:checked~.hold-logo .menu {
@@ -454,7 +456,6 @@ header {
     line-height: 140%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 }
 
 @media (min-width: 480px) {
@@ -548,6 +549,12 @@ header {
 }
 
 @media (min-width: 768px) {
+    .list {
+        padding: 21px 0 0;
+    }
+}
+
+@media (min-width: 992px) {
     .list {
         padding: 71px 0 0;
     }
