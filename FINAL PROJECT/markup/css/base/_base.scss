@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('./fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('./fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: $black;
+    background: $grad-supersoft;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 60px;
+    }
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 145%;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+a {
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 125%;
+    color: $active;
+}
+
+
+// @mixin h($fw: 700, $fs: 30px, $lh: normal, color: $main)
+h1 {
+    @include h;
+    font-size: 38px;
+    color: transparent;
+    background: $grad-red-text;
+    background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    @include h;
+}
+
+h3 {
+    @include h;
+    font-size: 22px;
+}
+
+h4 {
+    @include h;
+    font-size: 16px;
+}
+
+h5 {
+    @include h;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
