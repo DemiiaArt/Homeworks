@@ -17,8 +17,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    @include upper;
     font-weight: 700;
     padding: 10px 0;
 
@@ -51,7 +50,7 @@
         &>li:nth-child(2n) {
             display: inline-block;
             font-weight: 400;
-            
+
             a {
                 display: inline-block;
             }
@@ -97,10 +96,16 @@
     display: flex;
 
     li {
-        padding: 0 7px;
+        padding: 5px 7px;
+
+        &:nth-child(3) {
+            border-radius: $border-active;
+            background: $accent;
+        }
 
         a {
             font-size: 12px;
+            display: block;
         }
     }
 }
@@ -111,24 +116,96 @@
     padding: 15px 0 10px;
     display: flex;
     justify-content: space-between;
-    
+
     &__logo-box {
         width: 70px;
         height: 32px;
     }
 
     &__box {
-        display: none;
+        // display: none;
+        // position: absolute;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: $white;
+        border-radius: 12px 12px 0 0;
+        padding: 64px 12px 12px;
+        margin: 0 8px;
+        transform: translateY(100%);
+        @extend %anim;
     }
 
-    a {
-        color: $white;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-weight: 700;
+
+        li {
+            text-align: center;
+            background: $bg;
+            padding: 7px 0;
+            border-radius: 12px;
+
+            &:active {
+                background: $separator;
+            }
+
+            a {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+#cancel {
+    position: absolute;
+    bottom: 327px;
+    right: 49px;
+    z-index: 100;
+    transform: translateY(100%);
+    @extend %anim;
+
+    span:before,
+    span::after {
+        content: "";
+        position: fixed;
+        width: 26px;
+        height: 2px;
+        background: $accent;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    span:before {
+        transform: rotate(45deg);
+    }
+
+    span:after {
+        transform: rotate(-45deg);
+    }
+}
+
+@media (min-widt:768px) {
+    #cancel {
+        display: none;
     }
 }
 
 #burger {
     display: none;
+
+    &:checked~.header-pin__box {
+        transform: translateY(0);
+    }
+
+    &:checked+#cancel>span {
+        transform: translateY(0);
+    }
 }
+
 
 .burger-menu {
     position: relative;
@@ -136,7 +213,13 @@
     width: 32px;
     height: 32px;
     overflow: hidden;
-    
+    z-index: 99;
+
+    &:active {
+        border-radius: $border-active;
+        background: $main-soft;
+    }
+
     &::before,
     &::after,
     span {
@@ -166,24 +249,47 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: 30px;
-        
+        gap: 15px;
+
         &__logo-box {
             width: 130px;
             height: 60px;
         }
-    
+
         &__box {
             display: block;
+            position: static;
+            background: none;
+            border-radius: none;
+            padding: 0;
+            margin: 0;
+            transform: none;
         }
 
         &__list {
             display: flex;
+            flex-direction: row;
+            gap: 0;
             margin: 0 -8px;
 
             li {
+                // text-align: center;
+                background: none;
                 padding: 0 8px;
+                border-radius: 0;
+
+                &:active {
+                    background: none;
+                }
+
+                a {
+                    font-size: 16px;
+                }
             }
+        }
+
+        a {
+            color: $white;
         }
     }
 
@@ -198,6 +304,6 @@
         justify-content: space-between;
         align-items: flex-end;
         gap: 0;
-        margin: -45px 0 0 0; 
+        margin: -45px 0 0 0;
     }
 }

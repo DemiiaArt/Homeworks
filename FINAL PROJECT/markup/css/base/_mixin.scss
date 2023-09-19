@@ -6,6 +6,15 @@
     color: $main;
 }
 
+@mixin upper ($tt: uppercase, $lsp: 1px) {
+    text-transform: $tt;
+    letter-spacing: $lsp;
+}
+
+%anim {
+    transition: all .8s ease-in-out;
+}
+
 // box_img
 // %box_img {
 //     position: relative;

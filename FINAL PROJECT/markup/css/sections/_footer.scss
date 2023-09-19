@@ -1,0 +1,78 @@
+#footer {
+    background: $bg;
+
+    a {
+        font-weight: 700;
+    }
+}
+
+.footer-hold {
+    padding: 30px 0;
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        address {
+            font-style: normal;
+            color: $main;
+        }
+
+        &--map a {
+            @include upper;
+            font-size: 12px;
+        }
+
+        &--contacts {
+
+            padding-top: 21px;
+            span {
+                font-size: 38px;
+                color: $active;
+            }
+
+            [href*="tel"] {
+                color: $main-alt;
+            }
+        }
+    }
+}
+
+.footer-copy {
+    color: $text;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-hold {
+        display: inline-block;
+        margin: 0 auto;
+
+        &__row {
+            flex-direction: row;
+            justify-content:flex-start;
+            gap: 26px;
+
+            &--contacts {
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #footer {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .footer-hold {
+            display: block;
+            margin: 0;
+        }
+    }
+}
