@@ -52,7 +52,7 @@
             font-weight: 400;
 
             a {
-                display: inline-block;
+                display: block;
             }
         }
 
@@ -64,22 +64,24 @@
 
         >li~li:before {
             content: "";
-            display: inline-block;
             width: 6px;
             height: 6px;
-            background: $separator;
+            background: #E6E6F0;
             border-radius: 50%;
-            position: relative;
-            right: 7px;
-            top: -3px;
-        }
-
-        span {
-            font-size: 24px;
-            color: $white;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -3px;
+            margin-left: -3px;
         }
     }
+
+    span {
+        font-size: 24px;
+        color: $white;
+    }
 }
+
 
 @media (min-width: 992px) {
     .revers {
@@ -111,8 +113,6 @@
 }
 
 .header-pin {
-    // font-size: 20px;
-    // font-weight: 400;
     padding: 15px 0 10px;
     display: flex;
     justify-content: space-between;
@@ -123,8 +123,6 @@
     }
 
     &__box {
-        // display: none;
-        // position: absolute;
         position: fixed;
         bottom: 0;
         right: 0;

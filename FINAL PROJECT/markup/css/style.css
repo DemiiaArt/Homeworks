@@ -558,23 +558,24 @@ h5 {
     font-weight: 400;
   }
   .contacts > li:nth-child(2n) a {
-    display: inline-block;
+    display: block;
   }
   .contacts > li:nth-child(2) a {
     color: #B3B3BA;
   }
   .contacts > li ~ li:before {
     content: "";
-    display: inline-block;
     width: 6px;
     height: 6px;
     background: #E6E6F0;
     border-radius: 50%;
-    position: relative;
-    right: 7px;
-    top: -3px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -3px;
+    margin-left: -3px;
   }
-  .contacts span {
+  span {
     font-size: 24px;
     color: #fff;
   }
