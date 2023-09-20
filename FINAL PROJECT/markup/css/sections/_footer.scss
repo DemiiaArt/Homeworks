@@ -26,11 +26,27 @@
         }
 
         &--contacts {
-
             padding-top: 21px;
+
+            a {
+                display: block;
+
+                &:active {
+                    color: $active-active;
+                }
+            }
+
             span {
                 font-size: 38px;
                 color: $active;
+
+                &:active {
+                    color: $active-active;
+                }
+
+                &:hover {
+                    color: $accent;
+                }
             }
 
             [href*="tel"] {
@@ -50,13 +66,48 @@
         display: inline-block;
         margin: 0 auto;
 
+        >li {
+            position: relative;
+        }
+
+        >li~li:before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background: $text;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -3px;
+            margin-left: -3px;
+        }
+
         &__row {
             flex-direction: row;
-            justify-content:flex-start;
-            gap: 26px;
+            justify-content: flex-start;
+            gap: 3px;
+
+            >li {
+                padding: 0 13px;
+                position: relative;
+            }
 
             &--contacts {
                 align-items: center;
+            }
+
+            >li~li:before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                background: $text;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: -3px;
+                margin-left: -3px;
             }
         }
     }
@@ -76,4 +127,3 @@
         }
     }
 }
-

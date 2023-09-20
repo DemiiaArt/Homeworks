@@ -73,6 +73,14 @@ a {
     text-decoration: none;
     line-height: 125%;
     color: $active;
+
+    &:active {
+        color: $active-active;
+    }
+
+    &:hover {
+        color: $accent;
+    }
 }
 
 

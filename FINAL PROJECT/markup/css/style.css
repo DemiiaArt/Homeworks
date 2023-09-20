@@ -387,6 +387,12 @@ a {
   line-height: 125%;
   color: #24A3FF;
 }
+a:active {
+  color: #006CCF;
+}
+a:hover {
+  color: #F0145A;
+}
 
 h1 {
   font-weight: 700;
@@ -539,8 +545,17 @@ h5 {
 .contacts a {
   color: #B3B3BA;
 }
+.contacts a:active {
+  color: #006CCF;
+}
+.contacts a:hover {
+  color: #F0145A;
+}
 .contacts--dark a {
   color: #fff;
+}
+.contacts span:hover {
+  color: #F0145A;
 }
 
 @media (min-width: 768px) {
@@ -554,7 +569,7 @@ h5 {
     position: relative;
   }
   .contacts > li:nth-child(2n) {
-    display: inline-block;
+    display: block;
     font-weight: 400;
   }
   .contacts > li:nth-child(2n) a {
@@ -562,6 +577,9 @@ h5 {
   }
   .contacts > li:nth-child(2) a {
     color: #B3B3BA;
+  }
+  .contacts > li:nth-child(2) a:hover {
+    color: #F0145A;
   }
   .contacts > li ~ li:before {
     content: "";
@@ -575,7 +593,7 @@ h5 {
     margin-top: -3px;
     margin-left: -3px;
   }
-  span {
+  [class*=icon] {
     font-size: 24px;
     color: #fff;
   }
@@ -603,6 +621,9 @@ h5 {
   font-size: 12px;
   display: block;
 }
+.lang li a:hover {
+  color: #fff;
+}
 
 .header-pin {
   padding: 15px 0 10px;
@@ -625,6 +646,7 @@ h5 {
   transform: translateY(100%);
 }
 .header-pin__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -633,7 +655,6 @@ h5 {
 .header-pin__list li {
   text-align: center;
   background: #F5F5FA;
-  padding: 7px 0;
   border-radius: 12px;
 }
 .header-pin__list li:active {
@@ -645,20 +666,30 @@ h5 {
 
 #cancel {
   position: absolute;
-  bottom: 327px;
-  right: 49px;
+  bottom: 270px;
+  right: 12px;
   z-index: 100;
   transform: translateY(100%);
+}
+#cancel span {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+#cancel span:active {
+  border-radius: 8px;
+  background: #686887;
 }
 #cancel span:before,
 #cancel span::after {
   content: "";
-  position: fixed;
+  position: absolute;
+  top: 50%;
+  right: 10%;
   width: 26px;
   height: 2px;
   background: #F0145A;
-  text-align: center;
-  vertical-align: middle;
 }
 #cancel span:before {
   transform: rotate(45deg);
@@ -667,7 +698,7 @@ h5 {
   transform: rotate(-45deg);
 }
 
-@media (min-widt: 768px) {
+@media (min-width: 768px) {
   #cancel {
     display: none;
   }
@@ -750,6 +781,27 @@ h5 {
   }
   .header-pin__list li a {
     font-size: 16px;
+    position: relative;
+  }
+  .header-pin__list li a:after {
+    content: "";
+    height: 2px;
+    background: #24A3FF;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+  }
+  .header-pin__list li a:hover {
+    color: #24A3FF;
+  }
+  .header-pin__list li a:hover:after {
+    right: 0;
+  }
+  .header-pin__list li a:active {
+    color: #F0145A;
+  }
+  .header-pin__list li a:active:after {
+    background: #F0145A;
   }
   .header-pin a {
     color: #fff;
@@ -795,9 +847,21 @@ h5 {
 .footer-hold__row--contacts {
   padding-top: 21px;
 }
+.footer-hold__row--contacts a {
+  display: block;
+}
+.footer-hold__row--contacts a:active {
+  color: #006CCF;
+}
 .footer-hold__row--contacts span {
   font-size: 38px;
   color: #24A3FF;
+}
+.footer-hold__row--contacts span:active {
+  color: #006CCF;
+}
+.footer-hold__row--contacts span:hover {
+  color: #F0145A;
 }
 .footer-hold__row--contacts [href*=tel] {
   color: #46466E;
@@ -813,13 +877,44 @@ h5 {
     display: inline-block;
     margin: 0 auto;
   }
+  .footer-hold > li {
+    position: relative;
+  }
+  .footer-hold > li ~ li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #B3B3BA;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -3px;
+    margin-left: -3px;
+  }
   .footer-hold__row {
     flex-direction: row;
     justify-content: flex-start;
-    gap: 26px;
+    gap: 3px;
+  }
+  .footer-hold__row > li {
+    padding: 0 13px;
+    position: relative;
   }
   .footer-hold__row--contacts {
     align-items: center;
+  }
+  .footer-hold__row > li ~ li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #B3B3BA;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -3px;
+    margin-left: -3px;
   }
 }
 @media (min-width: 992px) {
