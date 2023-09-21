@@ -7,7 +7,10 @@
 
 // sections
 @import "./sections/header";
+@import "./sections/main";
 @import "./sections/footer";
 
 // Style Start
-// @import "";
+@import "./components/navigation";
+@import "./components/card";
+@import "./components/other";

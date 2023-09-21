@@ -1,0 +1,88 @@
+.c-card {
+    &__img {
+        display: inline-block;
+        font-size: 60px;
+        background: $white;
+        border-radius: $border-icon;
+        padding: 16px;
+
+        span {
+            color: transparent;
+            background: $grad-icon;
+            background-clip: text;
+        }
+    }
+
+    &__body {
+        padding-top: 30px;
+        color: $white;
+        line-height: 162%;
+    }
+
+    &__title {
+        color: $active;
+    }
+
+    &__copy {
+        margin: 15px 0 0 0;
+    }
+}
+
+.c-card-news {
+    background: $bg;
+    border-radius: 12px;
+    overflow: hidden;
+
+    &__img {
+        height: 500px;
+        
+        img {
+            object-fit: cover;
+            height: 100%;
+            max-width: none;
+        }
+    }
+
+    &__body {
+        padding: 30px;
+    }
+
+    &__title {
+        h4 {
+            color: transparent;
+            background: $grad-red-text;
+            background-clip: text;
+        }
+    }
+
+    &__subtitle {
+        padding-top: 30px;
+        color: $text;
+        font-size: 14px;
+
+        h4 {
+            color: $text;
+        }
+
+        p {
+            margin: 6px 0 0 0;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .c-card-news {
+        display: flex;
+        align-items: center;
+
+        &__img {
+            height: 100%;
+            width: 400px;
+            
+            img {
+                object-fit: cover;
+                max-width: 100%;
+            }
+        }
+    }
+}

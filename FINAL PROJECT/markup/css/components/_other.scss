@@ -1,0 +1,44 @@
+.c-tag {
+    color: $active;
+    position: relative;
+    padding-right: 10px;
+
+    &:before,
+    &::after {
+        content: "";
+        width: 7px;
+        height: 2px;
+        background: $active;
+        position: absolute;
+        top: 55%;
+        right: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    &:before {
+        transform: rotate(-45deg);
+    }
+
+    &:after {
+        top: 35%;
+        transform: rotate(45deg);
+    }
+
+    &:hover {
+        color: $accent;
+
+        &:before,
+        &::after {
+            background: $accent;
+        }
+    }
+
+    &:active {
+        color: $active-active;
+
+        &:before,
+        &::after {
+            background: $active-active;
+        }
+    }
+}
