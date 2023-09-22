@@ -914,6 +914,13 @@ h5,
 .hold-start__title .h1 {
   margin: 10px 0;
 }
+.hold-start--color {
+  background: #F5F5FA;
+}
+.hold-start--color {
+  gap: 30px;
+  padding-top: 30px;
+}
 
 .list {
   padding: 15px 0;
@@ -948,11 +955,128 @@ h5,
     padding: 80px 0 46px;
   }
 }
+.l-hold-center {
+  padding: 30px 0 0;
+}
+.l-hold-center h5 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.logo-list li {
+  text-align: center;
+}
+.logo-list li:nth-child(1) {
+  background: #1C4280;
+}
+.logo-list li:nth-child(2) {
+  background: #143646;
+}
+.logo-list li:nth-child(3) {
+  background: #F48B30;
+}
+.logo-list li:nth-child(4) {
+  background: #9E4DC3;
+}
+.logo-list li:nth-child(5) {
+  background: #FD9339;
+}
+.logo-list li:nth-child(6) {
+  background: #E2E2E4;
+}
+.logo-list li:nth-child(7) {
+  background: #C71C36;
+}
+.logo-list li:nth-child(8) {
+  background: #DCF3F9;
+}
+.logo-list li:nth-child(9) {
+  background: #EAEAEA;
+}
+.logo-list li:nth-child(10) {
+  background: #282240;
+}
+.logo-list li:nth-child(11) {
+  background: #1D4568;
+}
+.logo-list li:nth-child(12) {
+  background: #000;
+}
+.logo-list li:nth-child(6) ~ li {
+  display: none;
+}
+.logo-list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+.logo-list li img {
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .logo-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo-list li {
+    width: 33.3333333333%;
+  }
+  .logo-list li:nth-child(6) ~ li {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .logo-list li {
+    width: 25%;
+  }
+  .logo-list li:hover img {
+    box-shadow: 10px 10px 50px #000;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.5s;
+  }
+}
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .card-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card-list .c-card-news--small {
+    height: 100%;
+  }
+  .card-list > li {
+    width: 47%;
+  }
+  .card-list > li:last-child {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .card-list > li {
+    width: 31%;
+  }
+  .card-list > li:last-child {
+    width: 31%;
+  }
+}
 #footer {
   background: #F5F5FA;
+  padding: 30px 0;
 }
 #footer a {
   font-weight: 700;
+}
+#footer .footer-box {
+  border-top: 2px solid #E6E6F0;
 }
 
 .footer-hold {
@@ -1003,7 +1127,7 @@ h5,
 
 @media (min-width: 768px) {
   .footer-hold {
-    display: inline-block;
+    display: block;
     margin: 0 auto;
   }
   .footer-hold > li {
@@ -1047,7 +1171,7 @@ h5,
   }
 }
 @media (min-width: 992px) {
-  #footer .container {
+  #footer .footer-box {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -1119,12 +1243,7 @@ h5,
 }
 
 .c-card-news {
-  background: #F5F5FA;
-  border-radius: 12px;
   overflow: hidden;
-}
-.c-card-news__img {
-  height: 500px;
 }
 .c-card-news__img img {
   -o-object-fit: cover;
@@ -1132,10 +1251,25 @@ h5,
   height: 100%;
   max-width: none;
 }
+.c-card-news__img--big {
+  height: 500px;
+}
+.c-card-news__img--small {
+  height: 200px;
+}
 .c-card-news__body {
   padding: 30px;
 }
-.c-card-news__title h4 {
+.c-card-news__title time {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  letter-spacing: 1px;
+  margin: 15px 0;
+  display: block;
+}
+.c-card-news__title--big h4 {
   color: transparent;
   background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
@@ -1152,17 +1286,33 @@ h5,
 .c-card-news__subtitle p {
   margin: 6px 0 0 0;
 }
+.c-card-news__copy {
+  font-size: 14px;
+  line-height: 157%;
+  border-top: 4px solid #E6E6F0;
+}
+.c-card-news__copy p {
+  margin: 15px 0 0 0;
+}
+.c-card-news--big {
+  background: #F5F5FA;
+  border-radius: 12px;
+}
+.c-card-news--small {
+  background: #fff;
+  border-radius: 8px;
+}
 
 @media (min-width: 992px) {
-  .c-card-news {
+  .c-card-news--big {
     display: flex;
     align-items: center;
   }
-  .c-card-news__img {
+  .c-card-news__img--big {
     height: 100%;
     width: 400px;
   }
-  .c-card-news__img img {
+  .c-card-news__img--big img {
     -o-object-fit: cover;
        object-fit: cover;
     max-width: 100%;
