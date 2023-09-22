@@ -1,4 +1,5 @@
 .c-card {
+    transition: all .5s;
     &__img {
         display: inline-block;
         font-size: 60px;
@@ -25,6 +26,16 @@
 
     &__copy {
         margin: 15px 0 0 0;
+    }
+}
+
+@media (min-width:992px) {
+    .c-card {
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
