@@ -29,16 +29,6 @@
     }
 }
 
-@media (min-width:992px) {
-    .c-card {
-        cursor: pointer;
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-}
-
 .c-card-news {
     overflow: hidden;
 

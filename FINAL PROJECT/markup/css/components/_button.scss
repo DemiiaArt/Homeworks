@@ -14,3 +14,15 @@
 //         background: $accent;
 //     }
 // }
+
+.btn-popup {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    color: $white;
+    background: $active;
+    border-radius: $border-button;
+    border: none;
+    padding: 18px 30px;
+    box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50);
+}

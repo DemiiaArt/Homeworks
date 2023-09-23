@@ -11,6 +11,13 @@
     letter-spacing: $lsp;
 }
 
+%list-marker {
+    padding-left: 14px;
+    background-image: url(../media/img/list_marker.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
 %anim {
     transition: all .8s ease-in-out;
 }
