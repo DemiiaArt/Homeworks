@@ -996,15 +996,16 @@ h5,
     padding-top: 60px;
   }
 }
-@media (min-width: 992px) {
-  .hold-hero-center {
-    padding: 60px 180px;
-  }
-}
 .border-top {
   border-top: 4px solid rgba(255, 255, 255, 0.5);
 }
 
+@media (min-width: 992px) {
+  .hold-paddind-left-right {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
 .hold-start {
   display: flex;
   flex-direction: column;
@@ -1015,12 +1016,24 @@ h5,
 }
 .hold-start--color {
   background: #F5F5FA;
-}
-.hold-start--color {
   gap: 30px;
   padding-top: 30px;
 }
 
+.padding-top {
+  padding-top: 70px;
+}
+
+@media (min-width: 768px) {
+  .padding-top {
+    padding-top: 190px;
+  }
+}
+@media (min-width: 992px) {
+  .padding-top {
+    padding-top: 86px;
+  }
+}
 .card-services {
   font-size: 18px;
   line-height: 144%;
