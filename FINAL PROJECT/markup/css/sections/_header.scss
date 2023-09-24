@@ -163,8 +163,16 @@
             a {
                 font-size: 20px;
                 line-height: normal;
-                color: $white;
+                color: $main;
                 font-weight: 400;
+            }
+        }
+
+        &--dark {
+            >li:last-child {
+                a {
+                    color: $white;
+                }
             }
         }
     }
@@ -231,7 +239,7 @@
                     width: 21px;
                 }
             }
-    
+
             >li:last-child {
                 a {
                     font-size: 36px;
@@ -284,7 +292,7 @@
 
                     &:hover {
                         color: $active;
-                        
+
                         &:after {
                             right: 0;
                         }
@@ -306,9 +314,10 @@
             }
         }
 
-        a {
-            color: $white;
-            
+        &--dark {
+            a {
+                color: $white;
+            }
         }
     }
 
@@ -407,7 +416,7 @@
         height: 2px;
         position: absolute;
         top: 50%;
-        background: $white;
+        background: $main;
         text-align: center;
     }
 
@@ -417,5 +426,13 @@
 
     &::after {
         top: 70%;
+    }
+
+    &--dark {
+        &::before,
+        &::after,
+        span {
+            background: $white;
+        }
     }
 }

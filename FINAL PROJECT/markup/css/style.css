@@ -674,8 +674,11 @@ h5,
 .header-pin__logo > li:last-child a {
   font-size: 20px;
   line-height: normal;
-  color: #fff;
+  color: #323264;
   font-weight: 400;
+}
+.header-pin__logo--dark > li:last-child a {
+  color: #fff;
 }
 .header-pin__logo-box {
   width: 70px;
@@ -786,7 +789,7 @@ h5,
     right: 0;
     background: #F0145A;
   }
-  .header-pin a {
+  .header-pin--dark a {
     color: #fff;
   }
   .burger-menu {
@@ -870,7 +873,7 @@ h5,
   height: 2px;
   position: absolute;
   top: 50%;
-  background: #fff;
+  background: #323264;
   text-align: center;
 }
 .burger-menu::before {
@@ -878,6 +881,10 @@ h5,
 }
 .burger-menu::after {
   top: 70%;
+}
+.burger-menu--dark::before, .burger-menu--dark::after,
+.burger-menu--dark span {
+  background: #fff;
 }
 
 .color-section {
@@ -1451,6 +1458,13 @@ h5,
   border: none;
   padding: 18px 30px;
   box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+  cursor: pointer;
+}
+.btn-popup:hover {
+  background: #0085FF;
+}
+.btn-popup:active {
+  background: #006CCF;
 }
 
 .c-tag {
