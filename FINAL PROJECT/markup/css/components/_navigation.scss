@@ -44,3 +44,50 @@
         }
     }
 }
+
+.more_arrow {
+    span {
+        position: relative;
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: $bg;
+        border-radius: 50%;
+        color: transparent;
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 55%;
+            left: 40%;
+            width: 10px;
+            height: 2px;
+            background: $active;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            bottom: 36%;
+            transform: rotate(-45deg);
+        }
+
+        &:hover {
+            background: $bg-alt;
+
+            &::after,
+            &::before {
+                background: $accent;
+            }
+        }
+
+        &:active {
+            background: $accent;
+
+            &::after,
+            &::before {
+                background: $active-active;
+            }
+        }
+    }
+}

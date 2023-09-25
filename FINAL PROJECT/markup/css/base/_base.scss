@@ -34,7 +34,7 @@ body {
 .container {
     max-width: 1360px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 30px;
 
     #footer & {
         padding: 0 30px;
@@ -93,6 +93,10 @@ h1,
     background-clip: text;
 }
 
+.h1-team {
+    margin: 30px 0 0 0;
+}
+
 
 h2,
 .h2 {
@@ -129,5 +133,9 @@ h5,
     h1,
     .h1 {
         font-size: 38px;
+    }
+
+    .h1-team {
+        margin: 60px 0 0 0;
     }
 }

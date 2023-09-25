@@ -42,3 +42,45 @@
         }
     }
 }
+
+.c-paginator {
+    padding-top: 30px;
+    text-align: center;
+
+    ul {
+        display: inline-flex;
+        margin-right: -15px;
+
+        li {
+            padding-right: 15px;
+        }
+    }
+    span {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: $active;
+        opacity: .2;
+    }
+
+    .current-part {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .c-paginator {
+        ul {
+            li {
+                &:nth-child(3)~li {
+                    display: none;
+                }
+            }
+        }
+
+        span:hover {
+            opacity: .6;
+        }
+    }
+}

@@ -64,7 +64,8 @@
         }
 
         &--big {
-            h4 {
+            blockquote {
+                margin: 0;
                 color: transparent;
                 background: $grad-red-text;
                 background-clip: text;
@@ -77,8 +78,10 @@
         color: $text;
         font-size: 14px;
 
-        h4 {
+        cite {
+            font-style: normal;
             color: $text;
+            font-weight: 700;
         }
 
         p {
@@ -107,7 +110,6 @@
     }
 }
 
-
 @media (min-width:992px) {
     .c-card-news {
         &--big {
@@ -123,6 +125,59 @@
                 object-fit: cover;
                 max-width: 100%;
             }
+        }
+    }
+}
+
+.c-team-card {
+    &__img {
+        padding-top: 300px;
+        position: relative;
+        border-radius: $border-button;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            inset: 0;
+            max-width: none;
+            height: 100%;
+            object-fit: cover;
+            @extend %anim;
+        }
+
+        a {
+            position: absolute;
+            inset: 0;
+            display: block;
+            color: transparent;
+            z-index: 1;
+
+            &:hover {
+                &~img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    &__body {
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        color: $text;
+        font-size: 14px;
+        line-height: 157%;
+
+        p {
+            margin: 5px 0 0 0;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .c-team-card {
+        &__img {
+            padding-top: 400px;
         }
     }
 }
