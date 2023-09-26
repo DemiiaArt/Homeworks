@@ -186,7 +186,7 @@
         align-items: center;
         gap: 8px;
     }
-    
+
     p {
         margin: 0;
     }
@@ -309,6 +309,7 @@
         background: $bg;
         gap: 30px;
         padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -448,12 +449,13 @@
 }
 
 @media (min-width: 768px) {
-    .achievements { 
+    .achievements {
         display: flex;
         gap: 40px;
 
         li {
             width: calc(100% /4);
+
             &~li {
                 display: block;
             }
@@ -463,6 +465,7 @@
 
 .logo-list {
     margin: 0 -30px;
+
     li {
         text-align: center;
 
@@ -761,26 +764,105 @@
 
             >a::before {
                 content: "";
-                    width: 6px;
-                    height: 6px;
-                    background: #E6E6F0;
-                    border-radius: 50%;
-                    position: absolute;
-                    left: 0;
-                    top: 50%;
-                    margin-top: -5px;
-                    margin-left: -13px;
+                width: 6px;
+                height: 6px;
+                background: #E6E6F0;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: -5px;
+                margin-left: -13px;
             }
 
             a {
                 font-size: 14px;
                 position: relative;
-                
+
             }
         }
 
         &__body {
             margin-left: 460px;
+        }
+    }
+}
+
+.hold-contacts {
+    padding-bottom: 30px;
+    margin-top: 30px;
+
+    &__list {
+        font-size: 21px;
+        line-height: 142%;
+        margin-top: -30px;
+
+        address {
+            font-style: normal;
+        }
+
+        .phoneNumber {
+            color: $main;
+        }
+
+        li {
+            padding: 30px 0;
+
+            span {
+                font-size: 38px;
+            }
+
+            &:nth-child(2) {
+                border-top: 4px solid $separator;
+
+                a {
+                    font-size: 21px;
+                    line-height: 142%;
+                    display: block;
+                }
+
+                a~a {
+                    padding-top: 15px;
+                }
+            }
+
+            &:last-child {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-top: 4px solid $separator;
+
+                a {
+                    font-size: 12px;
+                    line-height: 133%;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .hold-contacts {
+        margin-top: 60px;
+        padding-bottom: 60px;
+
+        &__list {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .hold-contacts {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+
+        &__list {
+            width: calc(100% / 2);
         }
     }
 }

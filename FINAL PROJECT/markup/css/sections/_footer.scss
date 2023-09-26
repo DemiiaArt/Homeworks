@@ -7,13 +7,15 @@
     }
 
     .footer-box {
-        border-top: 2px solid $separator;
+
+        &--separator {
+            border-top: 2px solid $separator;
+        }
     }
 }
 
 .footer-hold {
     padding: 30px 0;
-    // border-top: 2px solid $separator;
 
     &__row {
         display: flex;

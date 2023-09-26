@@ -35,4 +35,10 @@
     &:active {
         background: $active-active;
     }
+
+    &--send-messege {
+        padding: 18px auto;
+        width: 100%;
+        min-width: 200px;
+    }
 }

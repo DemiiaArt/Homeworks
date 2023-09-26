@@ -1170,6 +1170,7 @@ h5,
   background: #F5F5FA;
   gap: 30px;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .color {
@@ -1554,6 +1555,71 @@ h5,
     margin-left: 460px;
   }
 }
+.hold-contacts {
+  padding-bottom: 30px;
+  margin-top: 30px;
+}
+.hold-contacts__list {
+  font-size: 21px;
+  line-height: 142%;
+  margin-top: -30px;
+}
+.hold-contacts__list address {
+  font-style: normal;
+}
+.hold-contacts__list .phoneNumber {
+  color: #323264;
+}
+.hold-contacts__list li {
+  padding: 30px 0;
+}
+.hold-contacts__list li span {
+  font-size: 38px;
+}
+.hold-contacts__list li:nth-child(2) {
+  border-top: 4px solid #E6E6F0;
+}
+.hold-contacts__list li:nth-child(2) a {
+  font-size: 21px;
+  line-height: 142%;
+  display: block;
+}
+.hold-contacts__list li:nth-child(2) a ~ a {
+  padding-top: 15px;
+}
+.hold-contacts__list li:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 4px solid #E6E6F0;
+}
+.hold-contacts__list li:last-child a {
+  font-size: 12px;
+  line-height: 133%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .hold-contacts {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+  .hold-contacts__list {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .hold-contacts {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .hold-contacts__list {
+    width: 50%;
+  }
+}
 #footer {
   background: #F5F5FA;
   padding: 0 0 30px 0;
@@ -1561,7 +1627,7 @@ h5,
 #footer a {
   font-weight: 700;
 }
-#footer .footer-box {
+#footer .footer-box--separator {
   border-top: 2px solid #E6E6F0;
 }
 
@@ -1907,6 +1973,11 @@ h5,
 .btn-popup:active {
   background: #006CCF;
 }
+.btn-popup--send-messege {
+  padding: 18px auto;
+  width: 100%;
+  min-width: 200px;
+}
 
 .c-tag {
   color: #24A3FF;
@@ -1973,4 +2044,58 @@ h5,
   .c-paginator span:hover {
     opacity: 0.6;
   }
+}
+form {
+  padding: 30px;
+  background: #F5F5FA;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+form h1 {
+  margin: 0;
+}
+form fieldset {
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form fieldset .h5 {
+  margin: 0;
+  color: #B3B3BA;
+}
+form fieldset input,
+form fieldset textarea {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background: #fff;
+  padding: 15px;
+  width: 100%;
+}
+form fieldset input::-moz-placeholder, form fieldset textarea::-moz-placeholder {
+  color: #B3B3BA;
+  font-size: 16px;
+  line-height: 162%;
+}
+form fieldset input::placeholder,
+form fieldset textarea::placeholder {
+  color: #B3B3BA;
+  font-size: 16px;
+  line-height: 162%;
+}
+form fieldset input:focus,
+form fieldset textarea:focus {
+  border: 1px solid #24A3FF;
+}
+form fieldset input:invalid,
+form fieldset textarea:invalid {
+  border: 1px solid red;
+  color: red;
+}
+form fieldset input:disabled,
+form fieldset textarea:disabled {
+  background: #EDEDF7;
 }/*# sourceMappingURL=style.css.map */
