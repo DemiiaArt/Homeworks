@@ -37,7 +37,7 @@ form {
             }
 
             &:focus {
-                border: 1px solid $active;
+                outline: 1px solid $active;
             }
 
             &:invalid {

@@ -1,0 +1,37 @@
+:root {
+    --swiper-pagination-bullet-width: 16px;
+    --swiper-pagination-bullet-height: 16px;
+    --swiper-pagination-bullet-horizontal-gap: 7px;
+    --swiper-theme-color: #24A3FF;
+    --swiper-pagination-bullet-inactive-color: #24A3FF;
+}
+
+.swiper-pagination {
+    position: static;
+    padding: 30px 0 0 0;
+}
+
+.hero-swiper {
+    &__titles {
+        display: flex;
+        flex-wrap: nowrap;
+
+        label {
+            color: $text;
+        }
+
+        .consistent:checked {
+
+        }
+    }
+
+    &__copy {
+        display: flex;
+        flex-wrap: nowrap;
+
+        h2 {
+            color: $white;
+            font-size: 20px;
+        }
+    }
+}
