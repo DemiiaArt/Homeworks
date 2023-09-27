@@ -2032,6 +2032,7 @@ h5,
   border-radius: 50%;
   background: #24A3FF;
   opacity: 0.2;
+  color: transparent;
 }
 .c-paginator .current-part {
   opacity: 1;
