@@ -1978,6 +1978,55 @@ h5,
   width: 100%;
   min-width: 200px;
 }
+.btn-popup + form {
+  display: none;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 50;
+  border-radius: 0;
+}
+.btn-popup + form .form-header {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-popup + form .form-header #cancel {
+  border: 0;
+  background: inherit;
+  align-self: flex-start;
+  position: relative;
+  display: block;
+  bottom: 0;
+  right: 0;
+  transform: none;
+}
+.btn-popup + form h1,
+.btn-popup + form h2 {
+  text-align: start;
+}
+
+@media (min-width: 768px) {
+  .btn-popup + form {
+    display: none;
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    z-index: 50;
+    border-radius: 12px;
+    width: 650px;
+    box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.5);
+  }
+}
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: #323264;
+  opacity: 0.9;
+  z-index: 10;
+}
 
 .c-tag {
   color: #24A3FF;

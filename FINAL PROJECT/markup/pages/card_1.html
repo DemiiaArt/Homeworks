@@ -18,7 +18,7 @@
                             <ul class="lang">
                                 <li><a href="#">ук</a></li>
                                 <li><a href="#">ру</a></li>
-                                <li  class="current-language"><a href="#">en</a></li>
+                                <li class="current-language"><a href="#">en</a></li>
                             </ul>
                         </li>
                         <li>
@@ -35,7 +35,7 @@
             </div>
             <div class="container">
                 <div class="header-pin header-pin--dark">
-                    <ul class="header-pin__logo">
+                    <ul class="header-pin__logo header-pin__logo--dark">
                         <li>
                             <div class="header-pin__logo-box">
                                 <a href="../index.html">
@@ -72,13 +72,40 @@
                         <span class="icon-Ecommerce"></span>
                     </div>
                     <h1>IT and e-commerce</h1>
-                    <p>An endless stream of contracts, tax issues, labor relations, 
-                        corporate papers - legal work distracts you from doing business. 
+                    <p>An endless stream of contracts, tax issues, labor relations,
+                        corporate papers - legal work distracts you from doing business.
                         But there is not much work to do to hire an in-house lawyer. <br>
-                        <br>In addition, over time, the work will become the same type and 
-                        uninteresting for a full-time lawyer. And we know very well how 
-                        difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
-                    <button class="btn-popup">Free consultation</button>
+                        <br>In addition, over time, the work will become the same type and
+                        uninteresting for a full-time lawyer. And we know very well how
+                        difficult it is to find a good candidate with experience in the field of information technology
+                        in Ukraine.
+                    </p>
+                    <div id="overlay" class="overlay"></div>
+                    <button onclick="openForm()" class="btn-popup">Free consultation</button>
+                    <form id="callBackForm" action="#">
+                        <div class="form-header">
+                            <h1>We would like to help you</h1>
+                            <button id="cancel" for="callBackForm"><span></span></button>
+                        </div>
+                        <fieldset>
+                            <span>
+                                <input id="name" type="text" placeholder="Name">
+                            </span>
+                            <span>
+                                <textarea id="message" rows="10" placeholder="Message"></textarea>
+                            </span>
+                        </fieldset>
+                        <fieldset>
+                            <h2 class="h5">How to answer you?</h2>
+                            <span>
+                                <input id="Phone" type="tel" placeholder="Phone number">
+                            </span>
+                            <span>
+                                <input id="Email" type="email" placeholder="Email">
+                            </span>
+                        </fieldset>
+                        <button class="btn-popup btn-popup--send-messege">Send message</button>
+                    </form>
                 </section>
                 <div class="hold-start container">
                     <div class="border-top">
@@ -86,15 +113,19 @@
                         <div class="hold-list-card-services">
                             <ul class="card-services">
                                 <li>support of investment projects for the development of port infrastructure;</li>
-                                <li>certification of GTS, entering information about them in mandatory databases and registers;</li>
+                                <li>certification of GTS, entering information about them in mandatory databases and
+                                    registers;</li>
                                 <li>registration of permits for the construction of port terminals;</li>
-                                <li>registration of permit and other mandatory documentation required for carrying out activities in the port (emission permit, conclusion on EIA, RTC, etc.);</li>
+                                <li>registration of permit and other mandatory documentation required for carrying out
+                                    activities in the port (emission permit, conclusion on EIA, RTC, etc.);</li>
                             </ul>
                             <ul class="card-services">
                                 <li>support of procedures related to the lease of state property in the port;</li>
-                                <li>support of procedures related to confirmation of the status of port operator, maritime agent, foreign sailing line;</li>
+                                <li>support of procedures related to confirmation of the status of port operator,
+                                    maritime agent, foreign sailing line;</li>
                                 <li>support of procedures related to the inclusion of the company within the port;</li>
-                                <li>appeals against actions related to the illegal imposition of services in the port by monopoly companies.</li>
+                                <li>appeals against actions related to the illegal imposition of services in the port by
+                                    monopoly companies.</li>
                             </ul>
                         </div>
                     </div>
@@ -120,7 +151,7 @@
                                         <time datetime="2023-04-22">April 22</time>
                                     </div>
                                     <div class="c-card-news__copy">
-                                        <p>I'm a jun on projects. I am a co-owner of a law firm. 
+                                        <p>I'm a jun on projects. I am a co-owner of a law firm.
                                             How it happened. Before entering my parents told me that if I…</p>
                                     </div>
                                 </div>
@@ -135,11 +166,13 @@
                                 </div>
                                 <div class="c-card-news__body">
                                     <div class="c-card-news__title">
-                                        <h4><a href="#">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a></h4>
+                                        <h4><a href="#">Penalty for the Good Corporation: what will happen to Google and
+                                                others for violating the GDPR</a></h4>
                                         <time datetime="2023-09-29">September 29</time>
                                     </div>
                                     <div class="c-card-news__copy">
-                                        <p>And why the recovery of 50 million euros could be a fateful precedent According to 
+                                        <p>And why the recovery of 50 million euros could be a fateful precedent
+                                            According to
                                             Mind.ua January 21 National Commission for Data Protection.</p>
                                     </div>
                                 </div>
@@ -158,8 +191,10 @@
                                         <time datetime="2023-08-19">August 19</time>
                                     </div>
                                     <div class="c-card-news__copy">
-                                        <p>What and how modern vloggers, opinion leaders and crypto-millionaires will inherit 
-                                            A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                                        <p>What and how modern vloggers, opinion leaders and crypto-millionaires will
+                                            inherit
+                                            A typical legacy of the Ukrainian generation X looks like this: an apartment
+                                            in…</p>
                                     </div>
                                 </div>
                             </div>
@@ -191,6 +226,24 @@
             </div>
         </footer>
     </div>
+    <script>
+        function openForm() {
+            var form = document.getElementById("callBackForm");
+            var overlay = document.getElementById("overlay");
+
+            form.style.display = "flex";
+            overlay.style.display = "block";
+        }
+        function closeForm() {
+            var form = document.getElementById("callBackForm");
+            var overlay = document.getElementById("overlay");
+
+            form.style.display = "none";
+            overlay.style.display = "none";
+        }
+        var cancelBtn = document.getElementById("cancel");
+        cancelBtn.addEventListener("click", closeForm);
+    </script>
 </body>
 
 </html>
