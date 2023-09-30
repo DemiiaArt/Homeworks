@@ -1,13 +1,12 @@
 #footer {
     background: $bg;
-    padding:0 0 30px 0;
+    padding: 0 0 30px 0;
 
     a {
         font-weight: 700;
     }
 
     .footer-box {
-
         &--separator {
             border-top: 2px solid $separator;
         }

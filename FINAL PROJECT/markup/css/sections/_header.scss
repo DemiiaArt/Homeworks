@@ -278,7 +278,7 @@
             display: block;
             position: static;
             background: none;
-            border-radius: none;
+            border-radius: 0;
             padding: 0;
             margin: 0;
             transform: none;
@@ -358,7 +358,8 @@
     }
 }
 
-#cancel {
+#cancel,
+#cancel-popup {
     position: absolute;
     bottom: 270px;
     right: 12px;
@@ -415,7 +416,6 @@
         transform: translateY(0);
     }
 }
-
 
 .burger-menu {
     position: relative;

@@ -49,7 +49,7 @@
                         </li>
                     </ul>
                     <input type="checkbox" id="burger">
-                    <label for="burger" class="burger-menu">
+                    <label for="burger" class="burger-menu burger-menu--dark">
                         <span></span>
                     </label>
                     <nav class="header-pin__box">
@@ -85,7 +85,7 @@
                     <form id="callBackForm" action="#">
                         <div class="form-header">
                             <h1>We would like to help you</h1>
-                            <button id="cancel" for="callBackForm"><span></span></button>
+                            <button id="cancel-popup"><span></span></button>
                         </div>
                         <fieldset>
                             <span>
@@ -241,7 +241,7 @@
             form.style.display = "none";
             overlay.style.display = "none";
         }
-        var cancelBtn = document.getElementById("cancel");
+        var cancelBtn = document.getElementById("cancel-popup");
         cancelBtn.addEventListener("click", closeForm);
     </script>
 </body>

@@ -321,7 +321,8 @@ template {
   background-repeat: no-repeat;
 }
 
-.c-team-card__img img, #cancel, .header-pin__box {
+.c-team-card__img img, #cancel,
+#cancel-popup, .header-pin__box {
   transition: all 0.8s ease-in-out;
 }
 
@@ -339,6 +340,10 @@ template {
   font-style: normal;
   font-display: swap;
 }
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -478,7 +483,8 @@ h5,
   font-style: normal;
   font-display: block;
 }
-[class^=icon-], [class*=" icon-"] {
+[class^=icon-],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
@@ -759,7 +765,7 @@ h5,
     display: block;
     position: static;
     background: none;
-    border-radius: none;
+    border-radius: 0;
     padding: 0;
     margin: 0;
     transform: none;
@@ -822,25 +828,30 @@ h5,
     margin: -45px 0 0 0;
   }
 }
-#cancel {
+#cancel,
+#cancel-popup {
   position: absolute;
   bottom: 270px;
   right: 12px;
   z-index: 100;
   transform: translateY(100%);
 }
-#cancel span {
+#cancel span,
+#cancel-popup span {
   position: relative;
   display: block;
   width: 32px;
   height: 32px;
 }
-#cancel span:active {
+#cancel span:active,
+#cancel-popup span:active {
   border-radius: 8px;
   background: #686887;
 }
 #cancel span:before,
-#cancel span::after {
+#cancel span::after,
+#cancel-popup span:before,
+#cancel-popup span::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -849,10 +860,12 @@ h5,
   height: 2px;
   background: #F0145A;
 }
-#cancel span:before {
+#cancel span:before,
+#cancel-popup span:before {
   transform: rotate(45deg);
 }
-#cancel span:after {
+#cancel span:after,
+#cancel-popup span:after {
   transform: rotate(-45deg);
 }
 
@@ -1961,7 +1974,7 @@ h5,
   color: #fff;
   background: #24A3FF;
   border-radius: 12px;
-  border: none;
+  border: 0;
   padding: 18px 30px;
   box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
   cursor: pointer;
@@ -1991,7 +2004,7 @@ h5,
   display: flex;
   justify-content: space-between;
 }
-.btn-popup + form .form-header #cancel {
+.btn-popup + form .form-header #cancel-popup {
   border: 0;
   background: inherit;
   align-self: flex-start;
@@ -2163,10 +2176,14 @@ form fieldset textarea:disabled {
   padding: 30px 0 0 0;
 }
 
+.hero-swiper {
+  padding: 60px 30px;
+}
 @media (min-width: 992px) {
   .hero-swiper {
     display: flex;
     align-items: center;
+    padding: 60px 120px;
   }
 }
 .hero-swiper input {
@@ -2192,7 +2209,7 @@ form fieldset textarea:disabled {
     display: block;
     overflow: visible;
     margin: 0;
-    padding: 0 5% 0 0;
+    padding: 0;
     text-align: right;
   }
 }
@@ -2201,12 +2218,14 @@ form fieldset textarea:disabled {
   display: block;
   transition: all 0.8s;
   text-wrap: nowrap;
-  padding-right: 30px;
+  padding-right: 60px;
   cursor: pointer;
 }
 @media (min-width: 992px) {
   .hero-swiper__titles label {
     text-wrap: wrap;
+    padding-bottom: 30px;
+    border-right: 4px solid rgba(255, 255, 255, 0.3);
   }
 }
 .hero-swiper__copy {
@@ -2222,7 +2241,6 @@ form fieldset textarea:disabled {
   .hero-swiper__copy {
     width: 60%;
     border-top: 0;
-    border-left: 4px solid rgba(255, 255, 255, 0.3);
     padding: 0 0 0 5%;
   }
 }
@@ -2284,10 +2302,7 @@ form fieldset textarea:disabled {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  /* fallback */
-  max-height: 200px;
-  /* fallback */
-  -webkit-line-clamp: 4;
-  /* number of lines to show */
+  max-height: 400px;
+  -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
 }/*# sourceMappingURL=style.css.map */

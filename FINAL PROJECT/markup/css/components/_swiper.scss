@@ -12,11 +12,12 @@
 }
 
 .hero-swiper {
-
+    padding: 60px 30px;
 
     @media (min-width: 992px) {
         display: flex;
         align-items: center;
+        padding: 60px 120px;
     }
 
     input {
@@ -30,7 +31,6 @@
         overflow: auto;
         margin: 0 -30px 30px;
         padding: 0 30px;
-        // flex-wrap: nowrap;
 
         @media (min-width: 768px) {
             margin: 0 -60px 60px;
@@ -42,9 +42,8 @@
             display: block;
             overflow: visible;
             margin: 0;
-            padding: 0 5% 0 0;
+            padding: 0;
             text-align: right;
-
         }
 
         label {
@@ -52,13 +51,14 @@
             display: block;
             transition: all $speed-anim;
             text-wrap: nowrap;
-            padding-right: 30px;
+            padding-right: 60px;
             cursor: pointer;
 
             @media (min-width: 992px) {
                 text-wrap: wrap;
+                padding-bottom: 30px;
+                border-right: 4px solid rgba(255, 255, 255, 0.30);
             }
-
         }
 
     }
@@ -74,7 +74,6 @@
         @media (min-width: 992px) {
             width: 60%;
             border-top: 0;
-            border-left: 4px solid rgba(255, 255, 255, 0.30);
             padding: 0 0 0 5%;
         }
 
@@ -82,17 +81,14 @@
             color: $white;
             font-size: 20px;
         }
-
     }
 
 
     &__item {
-        // display: none;
         position: absolute;
         opacity: 0;
         transform: translateY(50px);
     }
-
 }
 
 #consistent:checked {
@@ -111,7 +107,6 @@
             transform: translateY(0);
         }
     }
-
 }
 
 #customer:checked {
@@ -130,7 +125,6 @@
             transform: translateY(0);
         }
     }
-
 }
 
 #innovative:checked {
@@ -149,7 +143,6 @@
             transform: translateY(0);
         }
     }
-
 }
 
 #business:checked {
@@ -168,18 +161,13 @@
             transform: translateY(0);
         }
     }
-
 }
 
 .dotted {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    /* fallback */
-    max-height: 200px;
-    /* fallback */
-    -webkit-line-clamp: 4;
-    /* number of lines to show */
+    max-height: 400px;
+    -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
-
 }
